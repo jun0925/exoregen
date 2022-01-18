@@ -1,0 +1,221 @@
+/***************************************
+* file-name: meterial.css
+* page-file-location: /meterial-detail.html,material.html
+* using: 자료실 페이지 관련 공통 사용 css
+* date: 2021-07-19
+****************************************/
+
+/** 최상단 타이틀 영역 **/
+.top-title {
+    margin-bottom: 0;
+}
+
+/** ...최상단 타이틀 영역 **/
+
+.section-meterial {
+    margin-bottom: 90px;
+}
+
+.section-detail .section-inner {
+    padding-top: 40px;
+    border-top: 1px solid #000;
+}
+
+.meterial-search {
+    float: right;
+}
+
+.top-cont-wrap {
+    margin-bottom: 40px;
+}
+
+.top-cont-wrap:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.meterial-search {
+    position: relative;
+    width: 360px;
+}
+
+#meterialSearch {
+    padding-right: 50px;
+}
+
+.meterial {
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+.meterial tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.meterial thead th:nth-child(1) {
+    padding-right: 36px;
+}
+
+.meterial thead th:nth-child(2) {
+    text-align: left;
+}
+
+.meterial th,
+.meterial td {
+    padding: 40px 0;
+    font-size: 20px;
+}
+
+.meterial tbody tr {
+    cursor: pointer;
+}
+
+.meterial tbody tr:last-child {
+    border-bottom: 0;
+}
+
+.meterial tbody th,
+.meterial tbody td {
+    font-weight: 300;
+    text-align: center;
+}
+
+.meterial tbody td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.download-btn {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url(/img_/icon/download.png) no-repeat;
+    background-size: 100%;
+}
+
+#contNum {
+    padding-right: 36px;
+}
+
+#contName {
+    text-align: left;
+}
+
+#contDownload {
+    position: relative;
+    left: 53px;
+}
+
+.paging-cont {
+    text-align: center;
+    font-size: 0;
+}
+
+.paging-cont a {
+    vertical-align: middle;
+}
+
+.paging-prev {
+    margin-right: 20px;
+}
+
+.paging-next {
+    margin-left: 10px;
+}
+
+.paging-prev img,
+.paging-next img {
+    vertical-align: middle;
+}
+
+.paging {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 10px;
+    color: #999;
+}
+
+.paging.choice {
+    color: #fff;
+    border: 0;
+    background: #3e215d;
+}
+
+/** detail page **/
+.meterial-tit-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.meterial-tit {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.meterial-date {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+.meterial-cont {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.meterial-cont img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.download-file-list {
+    margin: 90px 0;
+}
+
+.download-file-list li {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.download-file-list li:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.download-file-list li span {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.download-file-list li .left {
+    float: left;
+}
+
+.download-file-list .left .download-btn {
+    margin-right: 86px;
+}
+
+.download-file-list li .right {
+    float: right;
+    position: relative;
+}
+
+.download-file-list li .right .file-size {
+    margin-right: 107px;
+}
+
+.download-file-list li .right  .searchIconBtn {
+    display: inline-block;
+}

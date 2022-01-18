@@ -1,0 +1,127 @@
+/***************************************
+* file-name: faq.css
+* page-file-location: /faq.html
+* using: 자주 묻는 질문 페이지 사용 css
+* date: 2021-07-16
+****************************************/
+/* faq section */
+.section-faq {
+    margin-bottom: 90px;
+}
+
+.top-cont-wrap {
+    margin-bottom: 40px;
+}
+
+.top-cont-wrap:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.section-faq .top-cont-left {
+    float: left;
+}
+
+.q-link {
+    display: block;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.q-link img {
+    margin-left: 15px;
+}
+
+.section-faq .top-cont-right {
+    float: right;
+    width: 360px;
+    position: relative;
+}
+
+#faqSearch {
+    padding-right: 50px;
+}
+
+.faq-cont-wrap {
+    border-top: 1px solid #000;
+}
+
+.faq-list {
+    margin-bottom: 50px;
+}
+.faq-list > li {
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-list > li:last-child {
+    border-bottom: 0;
+}
+
+.faq-list > li.faq-open {
+    background: #eaeaea;
+}
+
+.faq-q {
+    position: relative;
+}
+
+.faq-q:after {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 10px;
+    background-image: url(/img_/icon/arrow-down.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq-open .faq-q:after {
+    background-image: url(/img_/icon/arrow-up.png);
+}
+
+.faq-q span,
+.faq-a span {
+    font-size: 20px;
+}
+
+.faq-q .bold,
+.faq-a .bold {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.faq-q .q,
+.faq-a .a {
+    font-weight: 300;
+}
+
+.faq-a {
+    display: none;
+    padding: 34px 0 0;
+}
+
+.flexible-box {
+    display: flex;
+    width: 80%;
+    word-break: keep-all;
+}
+
+.faq-a span {
+    line-height: 1.6;
+}
+/* ...faq section */

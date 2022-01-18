@@ -1,0 +1,88 @@
+/***************************************
+* file-name: cibi.css
+* page-file-location: /cibi.html
+* using: cibi 페이지 css
+* date: 2021-07-20
+****************************************/
+
+.section-cibi {
+    margin: 90px 0;
+}
+
+.cont-top-wrap {
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.ci-bi-tab {
+    margin-bottom: 13px;
+}
+
+.ci-bi-tab li {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 600;
+    opacity: 0.6;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+/*.ci-bi-tab li:first-child {
+    margin-right: 83px;
+}*/
+
+.ci-bi-tab li.choice {
+    opacity: 1;
+    color: #3e215d;
+    font-weight: 600;
+}
+
+.ci-bi-txt {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.cont-box > div {
+    transition: 0.5s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.cont-box > div.show {
+    opacity: 1;
+    transform: none;
+}
+
+.ci-wrap {
+    display: none;
+}
+
+.ci-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ci-cont:first-child {
+    margin-bottom: 90px;
+}
+
+.ci-cont .ci p {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+/*.bi-wrap {
+    display: none;
+}*/
+
+.bi-cont {
+    text-align: center;
+}
+
+.bi-cont:first-child {
+    margin-bottom: 35px;
+}
+

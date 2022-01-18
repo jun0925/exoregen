@@ -1,0 +1,56 @@
+.ep-plan-section {
+    margin: 90px 0;
+}
+
+.ep-tit-wrap {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.ep-tit-wrap h2 {
+    font-size: 40px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.ep-tit-wrap h2 span {
+    font-weight: 400;
+}
+
+.ep-tit-wrap p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #959595;
+}
+
+.ep-cont {
+    margin-bottom: 40px;
+}
+
+.ep-cont:last-child {
+    margin-bottom: 0;
+}
+
+.ep-cont > span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.ep-cont > ul {
+    margin-top: 20px;
+}
+
+.ep-cont > ul > li {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    display: flex;
+}
+
+.ep-cont > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.ep-cont > ul > li:before {
+    content: "ㆍ";
+}

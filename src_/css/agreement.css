@@ -1,0 +1,110 @@
+/***************************************
+* file-name: agreement.css
+* page-file-location: /tos.html,privacyinfo.html,member_contract.html,marketing
+* using: 이용약관등 전문보기 페이지 사용 css
+* date: 2021-07-15
+****************************************/
+.agreement-page .section-top-title {
+    margin: 90px 0 0;
+}
+
+.agreement-page .section-top-title .section-inner {
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+}
+
+.agreement-page .top-title {
+    font-weight: 400;
+}
+
+.am-subject {
+    word-break: keep-all;
+}
+
+.section-agreement {
+    padding: 50px 0;
+}
+
+.am-tit {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.am-sub-tit {
+    font-size: 25px;
+    margin: 70px 0;
+}
+
+.am-sub2-tit {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.am-subject {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    line-height: 1.68;
+    word-break: keep-all;
+    letter-spacing: -1.1px;
+}
+
+.am-num-list {
+    margin: 10px 0;
+}
+
+.am-num-list li {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+.agreement-table tr {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.agreement-table tbody tr:nth-child(4) {
+    border-bottom: 0;
+}
+
+.agreement-table tbody tr:nth-child(4) td {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.agreement-table th,
+.agreement-table td {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.agreement-table td {
+    font-weight: 300;
+    padding: 40px 28px;
+}
+
+.agreement-table thead th {
+    width: 1%;
+    padding-bottom: 40px;
+}
+
+.agreement-table tbody th {
+    padding: 40px 0;
+    font-weight: 300;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+}
+
+.contract {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 40px;
+}

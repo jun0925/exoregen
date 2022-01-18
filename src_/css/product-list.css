@@ -1,0 +1,88 @@
+/***************************************
+* file-name: product-list.css
+* page-file-location: /products-list.html
+* using: 제품리스트 페이지 css
+* date: 2021-07-14
+****************************************/
+
+/** section1 **/
+.product-bg {
+    height: 539px;
+    background-image: url(/img_/bg/pd_page_bg.jpg);
+}
+
+.top-bg-cont-wrap {
+    top: 59%;
+    text-align: center;
+}
+/** ...section1 **/
+
+/** product section **/
+.product-section {
+    width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 385px;
+    margin-right: 21px;
+    margin-bottom: 92px;
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product > a {
+    display: block;
+    background: #f4f2f5;
+}
+
+.product-txt-box {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    height: 190px;
+}
+ 
+.product-info-box .product-name  {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product-info-box .product-description {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product-info-box .product-price {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-img-box {
+    width: 100%;
+    height: 450px;
+}
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+}
+/** ...product section **/
+
+

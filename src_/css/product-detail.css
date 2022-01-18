@@ -1,0 +1,432 @@
+/***************************************
+* file-name: product-detail.css
+* page-file-location: /product-detail.html
+* using: 상품 상세페이지 사용 css
+* date: 2021-07-14
+****************************************/
+
+/* detail info section css */
+.info-section {
+    margin: 90px 0;
+}
+
+.flexible-box {
+    display: flex;
+}
+
+.flexible-box .left {
+    margin-right: 90px;
+    font-size: 0;
+    overflow: hidden;
+    min-width: 543px;
+}
+
+.flexible-box .left .product-main-swiper {
+    height: 633px;
+    margin: 0;
+}
+
+.flexible-box .left .swiper-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-main-swiper .swiper-button-prev,
+.product-main-swiper .swiper-button-next {
+    width: 45px;
+    height: 45px;
+    top: 50%;
+}
+
+.product-main-swiper .swiper-button-disabled {
+    opacity: 0.4;
+}
+
+.product-thumb-swiper {
+    height: 200px;
+}
+
+.product-thumb-swiper .swiper-slide {
+    box-sizing: border-box;
+    width: 170px;
+    cursor: pointer;
+}
+
+.product-thumb-swiper .swiper-slide.swiper-slide-thumb-active {
+    border: 1px solid #3e215d;
+    z-index: 2;
+}
+
+.flexible-box .right {
+    min-width: 47.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-name-wrap {
+    margin-bottom: 28px;
+}
+
+.info-name-wrap .info-kor-name {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.info-name-wrap .info-eng-name {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.info-txt-wrap {
+    margin-bottom: 30px;
+    max-width: 660px;
+}
+
+.txt-cont {
+    width: 550px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.info-price-wrap {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #959595;
+}
+
+.info-price-wrap .member-info .left-cont,
+.info-price-wrap .member-info .right-cont {
+    font-size: 30px;
+}
+
+.info-price-wrap .ep-info .info-right {
+    margin-right: 10px;
+}
+
+.info-price-wrap .ep-info > a {
+    background: #959595;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 3px 5px;
+    position: relative;
+    top: -4px;
+}
+
+.info-price-wrap .ep-info .right-cont {
+    color: #959595;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-list-wrap {
+    padding-top: 20px;
+    border-bottom: 1px solid #959595;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.info-left {
+    width: 135px;
+    margin-right: 20px;
+}
+
+.info-cont {
+    font-size: 18px;
+}
+
+.left-cont {
+    color: #959595;
+}
+
+.right-cont {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.right-cont:last-child {
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-right select {
+    width: 180px;
+    height: 30px;
+    font-weight: 300;
+}
+
+.info-right select option {
+    font-weight: 300;
+}
+
+#productDetailSwiper {
+    height: 220px;
+    max-width: 1200px;
+}
+
+#productDetailSwiper .swiper-slide {
+    width: 180px;
+    height: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#productDetailSwiper .swiper-slide.choice {
+    border: 5px solid #3e215d;
+}
+
+#productDetailSwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#productDetailSwiper .swiper-button-prev, 
+#productDetailSwiper .swiper-button-next {
+    bottom: 0;
+}
+
+#productDetailSwiper .swiper-button-next {
+    right: 35%;
+}
+
+.product-btn-wrap {
+    margin-top: 40px;
+    font-size: 0;
+}
+
+.product-btn-wrap a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 180px;
+    padding: 22px 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product-btn-wrap a.basket-btn {
+    background: #000;
+    margin-right: 20px;
+}
+
+.product-btn-wrap a.buy-btn {
+    background: #e53c41;
+}
+
+.product-btn-wrap a img {
+    margin-left: 15px;
+}
+
+/* ...detail info section css */
+
+/* detail section css */
+.detail-section {
+    margin-bottom: 90px;
+}
+
+.detail-tab-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.detail-tab-list .tab {
+    font-size: 18px;
+    margin-right: 90px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.detail-tab-list .tab:last-child {
+    margin-right: 0;
+}
+
+.detail-tab-list .tab.choice {
+    opacity: 1;
+    font-weight: 600;
+}
+
+/* 상세 정보 */
+.detail {
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.detail-list {
+    font-size: 0;
+}
+
+.detail-list li {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.detail-list li .toggle-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 30px 0;
+    height: auto;
+}
+
+.detail-list li .toggle-btn span {
+    display: block;
+    width: 100%;
+    font-size:  30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.detail-list li .toggle-btn span:after {
+    content: " ";
+    display: block;
+    width: 28px;
+    height: 20px;
+    background-size: 28px 20px;
+    background: url(/img_/icon/arrow-down2.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.detail-list li.active {
+    padding-bottom: 40px;
+}
+
+.detail-list li.active .toggle-btn span:after {
+    background-image: url(/img_/icon/arrow-up2.png);
+}
+
+.detail-list li .detail-cont {
+    display: none;
+}
+
+.detail-list li.active .detail-cont {
+    display: block;
+}
+
+.detail img {
+    width: 100%;
+}
+/* ...상세 정보 */
+
+/* 배송 등 정보 */
+
+.delivery {
+    display: none;
+    padding-bottom: 50px;
+}
+
+.dlivery-guide-wrap {
+    padding-top: 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dlivery-guide-wrap:first-child {
+    padding-top: 0;
+}
+
+.dlivery-guide-wrap:last-child {
+    border-bottom: 0;
+}
+
+
+.guide1 {
+    margin-bottom: 40px;
+}
+
+.guide1 strong {
+    font-size: 28px;
+}
+
+.guide2 {
+    margin-bottom: 12px;
+}
+
+.guide2 strong {
+    font-size: 18px;
+}
+
+.guide-list {
+    padding-bottom: 33px;
+}
+
+.guide-list li {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.686;
+    word-break: keep-all;
+    display: flex;
+}
+
+.guide-list li:last-child {
+    margin-bottom: 0;
+}
+
+.guide-list li:before {
+    content: "·";
+    margin-right: 9px;
+}
+
+/* ...배송 등 정보 */
+/*...detail section css */
+
+.another-section {
+    margin-bottom: 90px;
+}
+
+.another-section .swiper-slide {
+    width: 385px;
+}
+
+.another-section .swiper-slide a {
+    display: block;
+    background: #f4f2f5;
+}
+
+.product-txt-box {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    height: 190px;
+}
+ 
+.product-info-box .product-name  {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product-info-box .product-description {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product-info-box .product-price {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-img-box {
+    width: 100%;
+    height: 450px;
+}
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+}
