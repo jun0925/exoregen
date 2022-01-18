@@ -295,6 +295,10 @@ span.swiper-pagination-current {
     position: relative;
 }
 
+.tv-swiper-outer .swiper-container {
+    margin-bottom: 40px;
+}
+
 .tv-swiper-outer .swiper-button-next,
 .tv-swiper-outer .swiper-button-prev {
     width: 13px;
