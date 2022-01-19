@@ -88,4 +88,23 @@ $(function () {
             nextEl: ".awards-logo-swiper-wrap .swiper-button-next"
         }
     });
+
+    //footer 계열사 콤보박스 기능
+    var comboBox = document.querySelector(".company-combo");
+    var companyBox = document.querySelector(".company-box");
+    comboBox.onclick = function(){
+        var openClass = "on";
+        this.classList.toggle(openClass);
+        companyBox.style.display = "block";
+        console.log("ok");
+        setTimeout(function(){
+            companyBox.classList.toggle(openClass);
+        },50);
+        
+        if(companyBox.classList.contains(openClass)) {
+            setTimeout(function(){
+                companyBox.style.display = "none";
+            },300);
+        }
+    }
 });
