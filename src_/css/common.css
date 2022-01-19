@@ -797,6 +797,11 @@ footer .section-outer {
     background: transparent;
 }
 
+.company-combo:hover {
+    background: #000;
+    border-color: #fff;
+}
+
 .company-combo.on {
     background: #000;
     border-color: #fff;
