@@ -17,7 +17,9 @@ $(function () {
     var $headerTop = $("html,body").position().top;
     var scrUpClass = "scrollUp";
     var scrDownClass = "scrollDown"
-    
+    var $subNav = $(".detail-nav");
+    var $gnbBox = $(".gnb-box");
+
     if ($header.hasClass("ws")) {
         $("main > section").eq(0).css("padding-top","100px");
         $header.addClass("on");
@@ -31,6 +33,8 @@ $(function () {
         if(scrY > lastScr) {
             $header.addClass(scrDownClass);
             $header.removeClass(scrUpClass);
+            $subNav.hide();
+            $gnbBox.removeClass("on");
         } else {
             $header.addClass(scrUpClass);
             $header.removeClass(scrDownClass);
@@ -47,14 +51,16 @@ $(function () {
     
     function subMenu(e) {
         var aniTimer = 300;
-        var $subNav = $(".detail-nav");
+
         if(e.type == "mouseover") {
             $header.addClass("on");
+            $gnbBox.addClass("on");
             $subNav.stop().fadeIn(aniTimer);
         }
 
         if(e.type == "mouseout") {
             $header.removeClass("on");
+            $gnbBox.removeClass("on");
             $subNav.stop().fadeOut(100);
         }
     }

@@ -425,18 +425,19 @@ nav {
 
 
 .gnb-box {
+    box-sizing: border-box;
     width: 100%;
     height: 0;
-    background: #fff;
-    position: absolute;
     opacity: 0;
+    position: absolute;
     transition: 0.4s;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-header:hover .gnb-box {
+.gnb-box.on {
+    background: #fff;
     height: 380px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
     opacity: 1;
 }
 /* header on */
