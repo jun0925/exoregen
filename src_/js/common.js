@@ -102,7 +102,6 @@ $(function () {
         var openClass = "on";
         this.classList.toggle(openClass);
         companyBox.style.display = "block";
-        console.log("ok");
         setTimeout(function(){
             companyBox.classList.toggle(openClass);
         },50);

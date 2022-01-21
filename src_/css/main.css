@@ -356,6 +356,7 @@ span.swiper-pagination-current {
     font-size: 20px;
     text-align: center;
     padding-top: 17px;
+    line-height: 1.15;
 }
 
 /** ...tv section **/
