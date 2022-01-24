@@ -4,91 +4,33 @@
 * using: 로그인 페이지 css
 * date: 2021-07-13
 ****************************************/
-.top-title {
-    letter-spacing: 0;
-    margin-bottom: 8px;
-}
+.top-title { letter-spacing: 0; margin-bottom: 8px; } 
 
-.section-login {
-    margin-bottom: 90px;
-}
+.section-login { margin-bottom: 90px; } 
 
-.check-icon {
-    width: 20px;
-    height: 20px;
-}
+.check-icon { width: 20px; height: 20px; } 
 
-.login-form-wrap {
-    max-width: 380px;
-    margin: 0 auto;
-}
+.login-form-wrap { max-width: 380px; margin: 0 auto; } 
 
-.form-cont {
-    margin-bottom: 15px;
-}
-.remain-wrap {
-    margin-bottom: 50px;
-}
+.form-cont { margin-bottom: 15px; } 
+.remain-wrap { margin-bottom: 50px; } 
 
-.remain-wrap .label-txt {
-    font-size: 14px;
-    font-weight: 300;
-    margin-left: 15px;
-    opacity: 0.6;
-}
+.remain-wrap .label-txt { font-size: 14px; font-weight: 300; margin-left: 15px; opacity: 0.6; } 
 
-.remain-wrap .label-txt:hover {
-    opacity: 1;
-}
+.remain-wrap .label-txt:hover { opacity: 1; } 
 
-.btn-wrap {
-    text-align: center;
-    font-size: 0;
-}
+.btn-wrap { text-align: center; font-size: 0; } 
 
-.btn-wrap a {
-    background: #000;
-    display: inline-block;
-    width: 180px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-}
+.btn-wrap a { background: #000; display: inline-block; width: 180px; height: 60px; text-align: center; line-height: 60px; color: #fff; font-size: 18px; font-weight: 300; } 
 
-.btn-wrap a:first-child {
-    margin-right: 20px;
-}
+.btn-wrap a:first-child { margin-right: 20px; } 
 
-.btn-wrap a img {
-    margin-left: 15px;
-}
+.btn-wrap a img { margin-left: 15px; } 
 
-.move-page-wrap {
-    margin-top: 40px;
-    text-align: center;
-}
+.move-page-wrap { margin-top: 40px; text-align: center; } 
 
-.link-txt {
-    font-size: 14px;
-    font-weight: 300;
-    color: #959595;
-}
+.link-txt { font-size: 14px; font-weight: 300; color: #959595; } 
 
-a.link-txt:hover {
-    opacity: 1;
-}
+a.link-txt:hover { opacity: 1; } 
 
-.join-link {
-    display: block;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    border: 1px solid #000;
-    text-align: center;
-    margin: 10px 0 30px;
-}
+.join-link { display: block; box-sizing: border-box; font-size: 18px; width: 100%; height: 60px; line-height: 60px; border: 1px solid #000; text-align: center; margin: 10px 0 30px; } 

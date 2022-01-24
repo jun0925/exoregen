@@ -1,324 +1,117 @@
 /* 뉴스 상단 백그라운드 영역 */
-.news-bg {
-    background-image: url(/img_/bg/news_page_bg.jpg);
-    background-size: cover;
-    height: 540px;
-}
+.news-bg { background-image: url(/img_/bg/news_page_bg.jpg); background-size: cover; height: 540px; } 
 
-.news-list-bg {
-    background-image: url(/img_/bg/news_list_bg.jpg);
-    background-size: cover;
-    height: 540px;
-}
+.news-list-bg { background-image: url(/img_/bg/news_list_bg.jpg); background-size: cover; height: 540px; } 
 
-.news-bg .top-bg-cont-wrap {
-    top: 61.5%;
-}
+.news-bg .top-bg-cont-wrap { top: 61.5%; } 
 
-.news-list-bg .top-bg-cont-wrap {
-    top: 60%;
-}
+.news-list-bg .top-bg-cont-wrap { top: 60%; } 
 
-.top-bg-tit {
-    margin-bottom: 0;
-}
+.top-bg-tit { margin-bottom: 0; } 
 
-.tab-wrap {
-    border-bottom: 1px solid #000;
-    margin-bottom: 40px;
-}
+.tab-wrap { border-bottom: 1px solid #000; margin-bottom: 40px; } 
 
-.tab-list {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
+.tab-list { display: flex; justify-content: center; padding-bottom: 20px; } 
 
-.tab-list li {
-    margin-right: 90px;
-}
+.tab-list li { margin-right: 90px; } 
 
-.tab-list li:last-child {
-    margin-right: 0;
-}
+.tab-list li:last-child { margin-right: 0; } 
 
-.tab {
-    font-size: 18px;
-    position: relative;
-    color: #959595;
-}
+.tab { font-size: 18px; position: relative; color: #959595; } 
 
-.tab:hover {
-    color: #3e215d;
-}
+.tab:hover { color: #3e215d; } 
 
-.tab.choice {
-    opacity: 1;
-    color: #3e215d;
-    font-weight: 600;
-}
+.tab.choice { opacity: 1; color: #3e215d; font-weight: 600; } 
 
-.tab:after {
-    content: " ";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background: #3e215d;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    border-radius: 50%;
-    transform: translateX(-50%);
-}
+.tab:after { content: " "; display: block; width: 8px; height: 8px; background: #3e215d; position: absolute; bottom: -20px; left: 50%; border-radius: 50%; transform: translateX(-50%); } 
 
 /* ...뉴스 상단 백그라운드 영역 */
 
-.section-hof {
-    margin-bottom: 90px;
-}
+.section-hof { margin-bottom: 90px; } 
 
-.section-hof .news-tab-list {
-    margin-bottom: 180px;
-}
+.section-hof .news-tab-list { margin-bottom: 180px; } 
 
-.best-leader-cont-wrap {
-    margin-bottom: 105px;
-}
+.best-leader-cont-wrap { margin-bottom: 105px; } 
 
-.best-leader-cont-wrap:last-child {
-    margin-bottom: 75px;
-}
+.best-leader-cont-wrap:last-child { margin-bottom: 75px; } 
 
-.leader-of-month {
-    margin-bottom: 180px;
-    text-align: center;
-    font-size: 0;
-    position: relative;
-}
+.leader-of-month { margin-bottom: 180px; text-align: center; font-size: 0; position: relative; } 
 
 .leader-of-month:after,
-.leader-of-month:before {
-    content: " ";
-    display: block;
-    width: 510px;
-    height: 1px;
-    background: #000;
-    position: absolute;
-    top: 50%;
-    display: none;
-}
+.leader-of-month:before { content: " "; display: block; width: 510px; height: 1px; background: #000; position: absolute; top: 50%; display: none; } 
 
-.leader-of-month:after {
-    right: 0;
-}
+.leader-of-month:after { right: 0; } 
 
-.leader-of-month:before {
-    margin-right: 50px;
-}
+.leader-of-month:before { margin-right: 50px; } 
 
-.leader-of-month img {
-    vertical-align: middle;
-}
+.leader-of-month img { vertical-align: middle; } 
 
-.leader-of-month span {
-    font-size: 24px;
-    font-weight: 600;
-    vertical-align: middle;
-    margin-left: 10px;
-}
+.leader-of-month span { font-size: 24px; font-weight: 600; vertical-align: middle; margin-left: 10px; } 
 
-.best-leader-list {
-    display: flex;
-    flex-wrap: wrap;
-}
+.best-leader-list { display: flex; flex-wrap: wrap; } 
 
-.best-leader {
-    box-sizing: border-box;
-    width: 220px;
-    position: relative;
-    border: 1px solid #000;
-    margin-right: 25px;
-    padding: 80px 13px 50px;
-    margin-bottom: 215px;
-}
+.best-leader { box-sizing: border-box; width: 220px; position: relative; border: 1px solid #000; margin-right: 25px; padding: 80px 13px 50px; margin-bottom: 215px; } 
 
-.best-leader:nth-child(5n) {
-    margin-right: 0;
-}
+.best-leader:nth-child(5n) { margin-right: 0; } 
 
-.best-leader:last-child {
-    margin-bottom: 0;
-}
+.best-leader:last-child { margin-bottom: 0; } 
 
-.best-leader:last-child {
-    margin-bottom: 0;
-}
+.best-leader:last-child { margin-bottom: 0; } 
 
-.best-leader:nth-last-child(2) {
-    margin-bottom: 0;
-}
+.best-leader:nth-last-child(2) { margin-bottom: 0; } 
 
-.best-leader:nth-last-child(3) {
-    margin-bottom: 0;
-}
+.best-leader:nth-last-child(3) { margin-bottom: 0; } 
 
-.best-leader:nth-last-child(4) {
-    margin-bottom: 0;
-}
+.best-leader:nth-last-child(4) { margin-bottom: 0; } 
 
-.best-leader:nth-last-child(5) {
-    margin-bottom: 0;
-}
+.best-leader:nth-last-child(5) { margin-bottom: 0; } 
 
-.best-leader .best-leader-img {
-    width: 180px;
-    height: 180px;
-    overflow: hidden;
-    border-radius: 50%;
-    position: absolute;
-    top: -140px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+.best-leader .best-leader-img { width: 180px; height: 180px; overflow: hidden; border-radius: 50%; position: absolute; top: -140px; left: 50%; transform: translateX(-50%); } 
 
-.best-leader .leader-name {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px;
-}
+.best-leader .leader-name { font-size: 30px; font-weight: 600; text-align: center; margin-bottom: 30px; } 
 
-.best-leader .leader-typho {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.67;
-    word-break: keep-all;
-    margin-bottom: 5px;
-}
+.best-leader .leader-typho { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 18px; font-weight: 300; line-height: 1.67; word-break: keep-all; margin-bottom: 5px; } 
 
-.best-leader .leader-info {
-    text-align: center;
-}
+.best-leader .leader-info { text-align: center; } 
 
-.best-leader .leader-info span {
-    font-size: 16px;
-    font-weight: 300;
-}
+.best-leader .leader-info span { font-size: 16px; font-weight: 300; } 
 
-.best-leader .icon-box {
-    width: 122px;
-    height: 30px;
-    background: #fff;
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%);
-    text-align: center;
-}
+.best-leader .icon-box { width: 122px; height: 30px; background: #fff; position: absolute; left: 50%; bottom: -15px; transform: translateX(-50%); text-align: center; } 
 
-.best-leader .icon-box a {
-    display: inline-block;
-    width: 35px;
-    height: 100%;
-    background-repeat: no-repeat;
-    transition: 0.3s;
-}
+.best-leader .icon-box a { display: inline-block; width: 35px; height: 100%; background-repeat: no-repeat; transition: 0.3s; } 
 
-.best-leader .icon-box a.leader-detail {
-    background-image: url(/img_/icon/detail.jpg);
-    margin-right: 6px;
-}
+.best-leader .icon-box a.leader-detail { background-image: url(/img_/icon/detail.jpg); margin-right: 6px; } 
 
-.best-leader .icon-box a.leader-detail:hover {
-    background-image: url(/img_/icon/detail-active.jpg);
-}
+.best-leader .icon-box a.leader-detail:hover { background-image: url(/img_/icon/detail-active.jpg); } 
 
-.best-leader .icon-box a.leader-join {
-    background-image: url(/img_/icon/join.jpg);
-}
+.best-leader .icon-box a.leader-join { background-image: url(/img_/icon/join.jpg); } 
 
-.best-leader .icon-box a.leader-join:hover {
-    background-image: url(/img_/icon/join-active.jpg);
-}
+.best-leader .icon-box a.leader-join:hover { background-image: url(/img_/icon/join-active.jpg); } 
 
 
 /********************************
 **********hof detail ***********
 ********************************/
-.hof-detail-section {
-    margin-bottom: 90px;
-}
+.hof-detail-section { margin-bottom: 90px; } 
 
-.hof-detail-section .hof-top {
-    text-align: center;
-    margin-bottom: 32px;
-}
+.hof-detail-section .hof-top { text-align: center; margin-bottom: 32px; } 
 
-.hof-detail-section .hof-top .hof-name {
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
+.hof-detail-section .hof-top .hof-name { font-size: 40px; font-weight: 400; margin-bottom: 20px; } 
 
-.hof-detail-section .hof-top p.sm {
-    font-size: 14px;
-    opacity: 0.6;
-    letter-spacing: 0;
-    color: #222;
-}
+.hof-detail-section .hof-top p.sm { font-size: 14px; opacity: 0.6; letter-spacing: 0; color: #222; } 
 
-.hof-detail-section .hof-top .hof-img {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 30px auto;
-}
+.hof-detail-section .hof-top .hof-img { width: 300px; height: 300px; overflow: hidden; border-radius: 50%; margin: 30px auto; } 
 
-.hof-detail-section .hof-top .hof-greeting {
-    font-size: 40px;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
+.hof-detail-section .hof-top .hof-greeting { font-size: 40px; line-height: 1.3; margin-bottom: 12px; } 
 
-.hof-detail-section .hof-top .go-join-btn {
-    display: block;
-    width: 180px;
-    height: 60px;
-    line-height: 60px;
-    margin: 40px auto 0;
-    background: #3e215d;
-    color: #fff;
-    font-weight: 300;
-}
+.hof-detail-section .hof-top .go-join-btn { display: block; width: 180px; height: 60px; line-height: 60px; margin: 40px auto 0; background: #3e215d; color: #fff; font-weight: 300; } 
 
-.hof-detail-section .hof-top .go-join-btn img {
-    margin-left: 30px;
-}
+.hof-detail-section .hof-top .go-join-btn img { margin-left: 30px; } 
 
-.hof-detail-section .hof-cont {
-    padding-bottom: 82px;
-}
+.hof-detail-section .hof-cont { padding-bottom: 82px; } 
 
-.hof-detail-section .hof-cont p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.6;
-    word-break: keep-all;
-}
+.hof-detail-section .hof-cont p { font-size: 20px; font-weight: 300; line-height: 1.6; word-break: keep-all; } 
 
-.hof-detail-section .hof-cont .sample {
-    width:100%;
-    height: 540px;
-    background: #3d3d3d;
-    margin: 30px 0; 
-}
+.hof-detail-section .hof-cont .sample { width:100%; height: 540px; background: #3d3d3d; margin: 30px 0; } 
 
-.hof-detail-section .go-list-btn-wrap {
-    margin-top: 90px;
-}
+.hof-detail-section .go-list-btn-wrap { margin-top: 90px; } 

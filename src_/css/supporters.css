@@ -5,180 +5,40 @@
 * date: 2021-07-20
 ****************************************/
 /* 최상단 배경 관련 css*/
-.supporters-bg {
-    background-image: url(/img_/bg/support_page_bg.jpg);
-    height: 540px;
-}
-
-.top-bg-cont-wrap {
-    top: 60%;
-}
-
-.top-bg-tit  {
-    margin-bottom: 15px;
-}
-
-.top-bg-txt {
-    line-height: 1;
-}
+.supporters-bg { background-image: url(/img_/bg/support_page_bg.jpg); height: 540px; } 
+.top-bg-cont-wrap { top: 60%; } 
+.top-bg-tit { margin-bottom: 15px; } 
+.top-bg-txt { line-height: 1; } 
 /* ...최상단 배경 관련 css*/
 
 /* 공용 링크 탭 */
-.tab-wrap {
-    border-bottom: 1px solid #000;
-    margin-bottom: 40px;
-}
-
-.tab-list {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-.tab-list li {
-    margin-right: 90px;
-}
-
-.tab-list li:last-child {
-    margin-right: 0;
-}
-
-.tab {
-    font-size: 18px;
-    position: relative;
-    color: #959595;
-}
-
-.tab:hover {
-    color: #3e215d;
-}
-
-.tab.choice {
-    opacity: 1;
-    color: #3e215d;
-    font-weight: 600;
-}
-
-.tab:after {
-    content: " ";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background: #3e215d;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    border-radius: 50%;
-    transform: translateX(-50%);
-}
+.tab-wrap { border-bottom: 1px solid #000; margin-bottom: 40px; } 
+.tab-list { display: flex; justify-content: center; padding-bottom: 20px; } 
+.tab-list li { margin-right: 90px; } 
+.tab-list li:last-child { margin-right: 0; } 
+.tab { font-size: 18px; position: relative; color: #959595; } 
+.tab:hover { color: #3e215d; } 
+.tab.choice { opacity: 1; color: #3e215d; font-weight: 600; } 
+.tab:after { content: " "; display: block; width: 8px; height: 8px; background: #3e215d; position: absolute; bottom: -20px; left: 50%; border-radius: 50%; transform: translateX(-50%); } 
 /* ...공용 링크 탭 */
 
 /* supporters01 페이지 */
-.kobeas-main  {
-    margin-bottom: 33px;
-    background: url(/img_/spt/spt-main.jpg) no-repeat; 
-    height: 525px;
-    box-sizing: border-box;
-}
-
-.kobeas-main .kobeas-subject {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding-left: 90px;
-}
-
-.kobeas-main .kobeas-subject p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.6;
-}
-
-.kobeas-main .kobeas-subject p:first-child {
-    margin-bottom: 10px;
-}
-
-.kobeas-main .kobeas-subject p span.big {
-    font-size: 46px;
-    font-weight: 600;
-}
-
-.kobeas-main .kobeas-subject p span.midium {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.kobeas-img-box img {
-    width: 100%;
-}
-
-.kobeas-txt-box {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.6;
-    margin-bottom: 52px;
-}
-
-.kobeas-txt-box p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-.kobeas-txt-box p:last-child {
-    margin-bottom: 0;
-}
-
-.section-list {
-    margin-bottom: 50px;
-}
-
-.kobeas-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.kobeas-list .kobeas-member {
-    margin-bottom: 40px;
-}
-
-.kobeas-member .kobeas-thumb {
-    width: 208px;
-    height: 242px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    margin-bottom: 20px;
-}
-
-.kobeas-info {
-    max-width: 208px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.kobeas-info .kobeas-name {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.kobeas-info p.kobeas-position {
-    font-size: 14px;
-    font-weight: 300;
-    color: #959595;
-    letter-spacing: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;    
-    margin-bottom: 10px;
-}
-
-.kobeas-info p.kobeas-position:last-child {
-    margin-bottom: 0;
-}
+.kobeas-main { margin-bottom: 33px; background: url(/img_/spt/spt-main.jpg) no-repeat; height: 525px; box-sizing: border-box; } 
+.kobeas-main .kobeas-subject { display: flex; flex-direction: column; justify-content: center; height: 100%; padding-left: 90px; } 
+.kobeas-main .kobeas-subject p { color: #fff; font-size: 20px; font-weight: 300; line-height: 1.6; } 
+.kobeas-main .kobeas-subject p:first-child { margin-bottom: 10px; } 
+.kobeas-main .kobeas-subject p span.big { font-size: 46px; font-weight: 600; } 
+.kobeas-main .kobeas-subject p span.midium { font-size: 30px; font-weight: 400; } 
+.kobeas-img-box img { width: 100%; } 
+.kobeas-txt-box { font-size: 20px; font-weight: 300; line-height: 1.6; margin-bottom: 52px; } 
+.kobeas-txt-box p { font-size: 20px; font-weight: 300; line-height: 1.7; margin-bottom: 25px; } 
+.kobeas-txt-box p:last-child { margin-bottom: 0; } 
+.section-list { margin-bottom: 50px; } 
+.kobeas-list { display: flex; flex-wrap: wrap; justify-content: space-between; } 
+.kobeas-list .kobeas-member { margin-bottom: 40px; } 
+.kobeas-member .kobeas-thumb { width: 208px; height: 242px; background-repeat: no-repeat; background-size: cover; background-position: top center; margin-bottom: 20px; } 
+.kobeas-info { max-width: 208px; overflow: hidden; text-align: center; } 
+.kobeas-info .kobeas-name { font-size: 20px; font-weight: 300; margin-bottom: 20px; } 
+.kobeas-info p.kobeas-position { font-size: 14px; font-weight: 300; color: #959595; letter-spacing: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 10px; } 
+.kobeas-info p.kobeas-position:last-child { margin-bottom: 0; } 
 /* ...supporters01 페이지 */

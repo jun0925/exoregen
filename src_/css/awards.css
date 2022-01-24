@@ -1,202 +1,76 @@
 /* 뉴스 상단 백그라운드 영역 */
 
-.news-bg {
-    background-image: url(/img_/bg/news_list_bg.jpg);
-    background-size: cover;
-    height: 540px;
-}
+.news-bg { background-image: url(/img_/bg/news_list_bg.jpg); background-size: cover; height: 540px; } 
 
-.top-bg-cont-wrap {
-    top: 60%;
-}
+.top-bg-cont-wrap { top: 60%; } 
 
-.top-bg-tit {
-    margin-bottom: 0;
-}
+.top-bg-tit { margin-bottom: 0; } 
 
 /* ...뉴스 상단 백그라운드 영역 */
 
-.tab-wrap {
-    border-bottom: 1px solid #000;
-    margin-bottom: 80px;
-}
+.tab-wrap { border-bottom: 1px solid #000; margin-bottom: 80px; } 
 
-.tab-list {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
+.tab-list { display: flex; justify-content: center; padding-bottom: 20px; } 
 
-.tab-list li {
-    margin-right: 90px;
-}
+.tab-list li { margin-right: 90px; } 
 
-.tab-list li:last-child {
-    margin-right: 0;
-}
+.tab-list li:last-child { margin-right: 0; } 
 
-.tab {
-    font-size: 18px;
-    position: relative;
-    color: #959595;
-}
+.tab { font-size: 18px; position: relative; color: #959595; } 
 
-.tab:hover {
-    color: #3e215d;
-}
+.tab:hover { color: #3e215d; } 
 
-.tab.choice {
-    opacity: 1;
-    color: #3e215d;
-    font-weight: 600;
-}
+.tab.choice { opacity: 1; color: #3e215d; font-weight: 600; } 
 
-.tab:after {
-    content: " ";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background: #3e215d;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    border-radius: 50%;
-    transform: translateX(-50%);
-}
+.tab:after { content: " "; display: block; width: 8px; height: 8px; background: #3e215d; position: absolute; bottom: -20px; left: 50%; border-radius: 50%; transform: translateX(-50%); } 
 
-.section-awards-list {
-    margin-bottom: 70px;
-}
+.section-awards-list { margin-bottom: 70px; } 
 
-.awards-list-wrap {
-    margin-bottom: 60px;
-}
+.awards-list-wrap { margin-bottom: 60px; } 
 
-.awards-list > li {
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
+.awards-list > li { padding-top: 40px; padding-bottom: 60px; } 
 
-.awards-list > li:nth-child(2n-1) {
-    background: #f7f7f7;
-}
+.awards-list > li:nth-child(2n-1) { background: #f7f7f7; } 
 
-.awards-list > li .list-inner {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-}
+.awards-list > li .list-inner { width: 1200px; margin: 0 auto; display: flex; } 
 
-.awards-list > li .award-thumb {
-    min-width: 300px;
-    text-align: center;
-    cursor: pointer;
-}
+.awards-list > li .award-thumb { min-width: 300px; text-align: center; cursor: pointer; } 
 
-.awards-list > li .award-thumb img {
-    width: auto;
-}
+.awards-list > li .award-thumb img { width: auto; } 
 
-.awards-list > li .award-info {
-    padding-left: 30px;
-}
+.awards-list > li .award-info { padding-left: 30px; } 
 
-.awards-list > li .award-info h3 {
-    font-size: 30px;
-    margin-bottom: 30px;
-    letter-spacing: 0;
-}
+.awards-list > li .award-info h3 { font-size: 30px; margin-bottom: 30px; letter-spacing: 0; } 
 
-.awards-list  > li .award-info .award-desc {
-    margin-bottom: 20px;
-}
+.awards-list > li .award-info .award-desc { margin-bottom: 20px; } 
 
-.awards-list > li .award-info .award-desc p {
-    font-size: 18px;
-    letter-spacing: 0;
-    font-weight: 300;
-    line-height: 1.55;
-}
+.awards-list > li .award-info .award-desc p { font-size: 18px; letter-spacing: 0; font-weight: 300; line-height: 1.55; } 
 
-.awards-list > li .award-info .award-desc p:nth-child(1) {
-    margin-bottom: 3px;
-}
+.awards-list > li .award-info .award-desc p:nth-child(1) { margin-bottom: 3px; } 
 
-.awards-list > li .award-info .award-desc p span {
-    margin-left: 25px;
-}
+.awards-list > li .award-info .award-desc p span { margin-left: 25px; } 
 
-.awards-list > li .award-info .award-desc p span:first-child {
-    margin-left: 0;
-}
+.awards-list > li .award-info .award-desc p span:first-child { margin-left: 0; } 
 
-.awards-list > li .award-info a {
-    box-sizing: border-box;
-    color: #3e215d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 40px;
-    border: 1px solid #3e215d;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    position: relative;
-}
+.awards-list > li .award-info a { box-sizing: border-box; color: #3e215d; display: flex; justify-content: center; align-items: center; width: 180px; height: 40px; border: 1px solid #3e215d; font-size: 16px; font-weight: 300; letter-spacing: 0.2em; position: relative; } 
 
-.awards-list > li .award-info a:after {
-    content: "+";
-    color: #3e215d;
-    position: absolute;
-    top: 45%;
-    right: 15px;
-    transform: translateY(-50%);
-    font-size: 25px;
-}
+.awards-list > li .award-info a:after { content: "+"; color: #3e215d; position: absolute; top: 45%; right: 15px; transform: translateY(-50%); font-size: 25px; } 
 
-.awards-detail-swiper-outer {
-    margin-top: 35px;
-    position: relative;
-}
+.awards-detail-swiper-outer { margin-top: 35px; position: relative; } 
 
-.awards-detail-swiper  {
-    max-width: 870px;
-}
+.awards-detail-swiper { max-width: 870px; } 
 
-.awards-detail-swiper .swiper-slide {
-    max-width: 120px;
-}
+.awards-detail-swiper .swiper-slide { max-width: 120px; } 
 
-.awards-detail-swiper li img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
+.awards-detail-swiper li img { width: 100%; height: 100%; cursor: pointer; } 
 
 .awards-detail-swiper-outer .swiper-button-prev,
-.awards-detail-swiper-outer .swiper-button-next{
-    width: 13px;
-    height: 22px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: 0;
-    opacity: 0.3;
-    transition: 0.2s;
-}
+.awards-detail-swiper-outer .swiper-button-next { width: 13px; height: 22px; top: 50%; transform: translateY(-50%); margin-top: 0; opacity: 0.3; transition: 0.2s; } 
 
 .awards-detail-swiper-outer .swiper-button-prev:hover,
-.awards-detail-swiper-outer .swiper-button-next:hover {
-    opacity: 1;
-}
+.awards-detail-swiper-outer .swiper-button-next:hover { opacity: 1; } 
 
-.awards-detail-swiper-outer .swiper-button-prev {
-    background-image: url(/img_/icon/award-swiper-prev.png);
-    left: -30px;
-}
+.awards-detail-swiper-outer .swiper-button-prev { background-image: url(/img_/icon/award-swiper-prev.png); left: -30px; } 
 
 
-.awards-detail-swiper-outer .swiper-button-next {
-    background-image: url(/img_/icon/award-swiper-next.png);
-    right: -30px;
-}
+.awards-detail-swiper-outer .swiper-button-next { background-image: url(/img_/icon/award-swiper-next.png); right: -30px; } 

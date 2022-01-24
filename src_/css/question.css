@@ -4,98 +4,21 @@
 * using: 문의하기 페이지 관련 css
 * date: 2021-07-16
 ****************************************/
-main input {
-    font-weight: 300;
-}
-
-main label {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-main select {
-    width: 100%;
-}
-
-main select option {
-    font-weight: 300;
-}
-
-main textarea {
-    box-sizing: border-box;
-    width: 100%;
-    height: 270px;
-    padding: 20px;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.section-question {
-    margin-bottom: 90px;
-}
-
-.question-inner {
-    width: 820px;
-    margin: 0 auto;
-}
-
-.question-cont {
-    margin-bottom: 36px;
-    font-size: 0;
-}
-
-.email-cont input {
-    max-width: 260px;
-}
-
-#emailAdd-Q {
-    margin-right: 15px;
-}
-
-.email-cont select {
-    max-width: 249px;
-    font-weight: 300;
-}
-
-.check-cont label[for="privacyInfo"] {
-    font-weight: 300;
-    display: inline-block;
-    margin-bottom: 0;
-}
-
-.check-cont .check-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.check-cont .label-txt {
-    margin: 0 15px;
-    font-weight: 300;
-}
-
-.check-cont .privacy-detail {
-    font-size: 19px;
-    font-weight: 600;
-    border-bottom: 1px solid #000;
-    vertical-align: middle;
-    position: relative;
-    top: -8px;
-}
-
-.send-btn-wrap {
-    text-align: center;
-}
-
-.send-btn {
-    font-size: 18px;
-    font-weight: 300;
-    width: 180px;
-    background: #000;
-    color: #fff;
-}
-
-
-.send-btn img {
-    margin-left: 15px;
-}
+main input { font-weight: 300; } 
+main label { display: block; font-size: 20px; margin-bottom: 20px; } 
+main select { width: 100%; } 
+main select option { font-weight: 300; } 
+main textarea { box-sizing: border-box; width: 100%; height: 270px; padding: 20px; font-size: 16px; font-weight: 300; } 
+.section-question { margin-bottom: 90px; } 
+.question-inner { width: 820px; margin: 0 auto; } 
+.question-cont { margin-bottom: 36px; font-size: 0; } 
+.email-cont input { max-width: 260px; } 
+#emailAdd-Q { margin-right: 15px; } 
+.email-cont select { max-width: 249px; font-weight: 300; } 
+.check-cont label[for="privacyInfo"] { font-weight: 300; display: inline-block; margin-bottom: 0; } 
+.check-cont .check-icon { width: 20px; height: 20px; } 
+.check-cont .label-txt { margin: 0 15px; font-weight: 300; } 
+.check-cont .privacy-detail { font-size: 19px; font-weight: 600; border-bottom: 1px solid #000; vertical-align: middle; position: relative; top: -8px; } 
+.send-btn-wrap { text-align: center; } 
+.send-btn { font-size: 18px; font-weight: 300; width: 180px; background: #000; color: #fff; } 
+.send-btn img { margin-left: 15px; } 
