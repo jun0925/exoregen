@@ -256,7 +256,7 @@
 
 .brand06 .cont-sub1 { box-shadow: 0 0 20px #999; position: relative; } 
 
-.brand06 .cont-sub1:after { content: " "; display: block; width: 146px; height: 140px; background: url(/img_/brand/b06-cont.png) no-repeat; position: absolute; right: -85px; bottom: 93px; } 
+.brand06 .cont-sub1:after { content: " "; display: block; width: 146px; height: 75px; background: url(/img_/brand/b06-cont2.png) no-repeat; position: absolute; right: -85px; bottom: 93px; } 
 
 .brand06 .cont-sub2 { width: 100%; } 
 
