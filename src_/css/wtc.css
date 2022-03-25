@@ -24,7 +24,7 @@
 .company-img-wrap .wtc-swiper-name {font-size: 24px; font-weight: 500; margin-bottom: 20px; letter-spacing: 0;}
 .company-img-wrap .wtc-swiper-outer {position: relative; padding: 0 50px; margin-bottom: 100px;}
 .company-img-wrap img{width: 100%;}
-.company-img-wrap .wtc-swiper-button {background-image: none; width: auto; height: auto; top: 50%; bottom: auto; opacity: 0.4; transform: translateY(-50%); transition: opacity 0.2s;}
+.company-img-wrap .wtc-swiper-button {background-image: none; width: auto; height: auto; top: 50%; bottom: auto; margin-top: 0; opacity: 0.4; transform: translateY(-50%); transition: opacity 0.2s;}
 .company-img-wrap .wtc-swiper-button:hover {opacity: 1;}
 .company-img-wrap .wtc-swiper-button i {font-size: 30px;}
 .wtc-map-wrap {padding: 0 50px;}
