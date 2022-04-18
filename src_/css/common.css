@@ -177,52 +177,27 @@ input[type="radio"]:checked~.check-icon { background-image: url(/img_/form/check
 
 /** header **/
 header { width: 100%; top: 0; z-index: 10000; position: fixed; transition: all 0.3s; } 
-
 .hd-top { box-sizing: border-box; height: 69px; } 
-
 .hd-top-inner { width: 1200px; margin: 0 auto; position: relative; padding: 11px 0 19px 0; display: flex; border-bottom: 1px solid #eaeaea; } 
-
 .logo-wrap a { display: block; width: 230px; height: 38px; text-indent: -9999px; background: url(/img_/logo/logo-wt.png) no-repeat; background-size: 100%; } 
-
 .top-menu { position: absolute; top: 52%; right: 0; transform: translateY(-50%); display: flex; } 
-
 .member-menu { font-weight: 600; } 
-
 li.line { width: 2px; height: 15px; background: #fff; margin: 0 40px; } 
-
 .member-menu a { display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 600; color: #fff; } 
-
 nav { width: 100%; z-index: 1000; transition: all 0.5s; } 
-
-.nav-inner {position: relative; max-width: 1200px; margin: 0 auto;}
-
+.nav-inner {position: relative; min-width: 1200px; max-width: 1200px; margin: 0 auto;}
 .nav-menu { display: flex; padding-left: 30px;}
-
 .nav-menu>.menu { position: relative; padding: 0 50px; } 
-
 .nav-menu > .menu:last-child { margin-right: 0; } 
-
 .nav-menu > .menu > a { display: block; color: #fff; font-size: 20px; font-weight: 600; letter-spacing: 0; padding: 20px 0;} 
-
 .nav-menu > .menu:hover > a { color: #3e215d !important; } 
-
 .detail-nav { display: none; width: 100%; position: absolute; left: 0; top: 80px; z-index: 3; } 
-
 .detail-nav li { text-align: center; padding-bottom: 18px; } 
-
 .detail-nav li a { font-size: 16px; font-weight: 300; } 
-
 .detail-nav li a:hover { font-weight: 600; color: #3e215d !important; } 
-
-/*.detail-nav li a:after { content: " "; display: block; width: 0; height: 1px; background: #000; position: absolute; left: 0; bottom: -4px; transition: all 0.3s; } 
-
-.detail-nav li a:hover:after { width: 100%; } */
-
 nav .link-label {position: absolute; top: 50%; right: 0; transform: translateY(-50%); -webkit-transform: translateY(calc(-50% + 0.5px)); height: 30px; display: flex; flex-direction: column; justify-content: center; background: #43695c; padding: 0 8px;}
-
 .gnb-box { box-sizing: border-box; width: 100%; height: 0; opacity: 0; position: absolute; transition: 0.4s; border-top: 1px solid rgba(0, 0, 0, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.3); } 
-
-.gnb-box.on { background: #fff; height: 425px; opacity: 1; } 
+.gnb-box.on { background: #fff; opacity: 1; } 
 /* header on */
 
 header.ws,

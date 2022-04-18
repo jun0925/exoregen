@@ -19,6 +19,13 @@ $(function () {
     var scrDownClass = "scrollDown"
     var $subNav = $(".detail-nav");
     var $gnbBox = $(".gnb-box");
+    var $navHeight;
+
+    if($(".nav2").children().length >= 8) {
+        $navHeight = $(".nav2").innerHeight();
+    } else {
+        $navHeight = $(".nav1").innerHeight();
+    }
 
     if ($header.hasClass("ws")) {
         $("main > section").eq(0).css("padding-top","100px");
@@ -34,7 +41,7 @@ $(function () {
             $header.addClass(scrDownClass);
             $header.removeClass(scrUpClass);
             $subNav.hide();
-            $gnbBox.removeClass("on");
+            $gnbBox.removeClass("on").css("height",0);
         } else {
             $header.addClass(scrUpClass);
             $header.removeClass(scrDownClass);
@@ -54,13 +61,13 @@ $(function () {
 
         if(e.type == "mouseover") {
             $header.addClass("on");
-            $gnbBox.addClass("on");
+            $gnbBox.addClass("on").css("height",$navHeight + 35);
             $subNav.stop().fadeIn(aniTimer);
         }
 
         if(e.type == "mouseout") {
             $header.removeClass("on");
-            $gnbBox.removeClass("on");
+            $gnbBox.removeClass("on").css("height", 0);
             $subNav.stop().fadeOut(100);
         }
     }
