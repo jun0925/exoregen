@@ -23,7 +23,8 @@
 .skin-test .test-form-guide { font-size: 30px; font-weight: 600; line-height: 1.4; text-align: center; margin-bottom: 32px; } 
 .skin-test .test-form-box { width: 820px; margin: 0 auto; } 
 .skin-test .test-form-box .test-form { margin-bottom: 40px; } 
-.skin-test .test-form-box .test-form > label { display: block; font-size: 20px; margin-bottom: 20px; } 
+.skin-test .test-form-box .test-form > label { display: block; font-size: 20px; margin-bottom: 20px; }
+.skin-test .test-form-box .test-form select {width: 100%;}
 .skin-test .test-form-box .form-flexible { display: flex; } 
 .skin-test .radio-wrap.form-flexible { align-items: center; } 
 .skin-test .check-wrap.form-flexible { justify-content: space-between; } 
