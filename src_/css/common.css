@@ -248,15 +248,15 @@ footer .counseling .left .left-top { margin-bottom: 40px; }
 
 footer .counseling .left .left-top label { font-size: 20px; display: block; margin-bottom: 20px; } 
 
-footer .counseling .left .left-top .form-cont { margin-right: 20px; margin-bottom: 0; } 
+footer .counseling .left .left-top .form-cont { font-size: 0; margin-right: 20px; margin-bottom: 0; } 
 
 footer .counseling .left .left-top .form-cont:last-child { margin-right: 0; } 
 
-footer .counseling .left .left-top .form-cont input { background: transparent; font-weight: 300; font-size: 18px; max-width: 155px; } 
+footer .counseling .left .left-top .form-cont input { background: transparent; font-weight: 300; font-size: 18px; max-width: 140px; } 
 
-footer .counseling .left .left-top .call-form input { max-width: 220px; } 
+footer .counseling .left .left-top .call-form input { max-width: 150px; } 
 
-footer .counseling .left .left-top .call-form button { font-size: 18px; font-weight: 300; width: 100px; margin-left: 10px; background: #000; color: #fff; opacity: 0.6; } 
+footer .counseling .left .left-top .call-form button { font-size: 18px; font-weight: 300; width: 100px; background: #000; color: #fff; opacity: 0.6; } 
 
 
 footer .counseling .left .left-btm .check-cont { width: 350px; } 
