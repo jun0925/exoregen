@@ -155,7 +155,7 @@ textarea:-ms-input-paceholder { color: #959595; }
 input[type="checkbox"],
 input[type="radio"] { display: none; } 
 
-select { box-sizing: border-box; border: 1px solid #000; background: url(/img_/icon/arrow-down.png) no-repeat center right 20px; background-size: 14px 10px; margin: 0; padding: 0 20px; font-size: 18px; font-weight: 400; min-width: 130px; height: 60px; vertical-align: top; -moz-appearance: none; /*Firefox*/
+select { box-sizing: border-box; border: 1px solid #000; color: #999; background: url(/img_/icon/arrow-down.png) no-repeat center right 20px; background-size: 14px 10px; margin: 0; padding: 0 20px; font-size: 18px; font-weight: 300; min-width: 130px; height: 60px; vertical-align: top; -moz-appearance: none; /*Firefox*/
  -webkit-appearance: none; /* Safari,Chorome*/
  appearance: none; } 
 
