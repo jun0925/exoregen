@@ -470,22 +470,28 @@ footer .section-outer { background: #3e215d; padding: 80px 0 90px; }
 
 .event-layer-cont .flexible-box { display: flex; } 
 
-.event-layer-cont .input-type:first-child { margin-right: 20px; } 
-
-.event-layer-cont .input-type { width: 220px; font-size: 0; } 
+.event-layer-cont .input-type { width: 220px; font-size: 0;} 
 
 .event-layer-cont .input-type input { max-width: 220px; } 
+
+.event-layer-cont .input-type.input-type1 {max-width: 170px; margin-right: 10px;}
+
+.event-layer-cont .input-type1:nth-child(3) {max-width: 180px; margin-right: 30px;}
+
+.event-layer-cont .input-type1 select {width: 100%;}
 
 .event-layer-cont .input-type > label,
 .event-layer-cont .radio-wrap > span { font-size: 20px; font-weight: 300; display: block; margin-bottom: 20px; } 
 
-.event-layer-cont .radio-wrap { margin-left: 15%; } 
+.event-layer-cont .radio-wrap .label-txt {font-size: 18px;}
 
 .event-layer-cont .radio-wrap > span { margin-bottom: 40px; } 
 
 .event-layer-cont .check-icon { width: 18px; height: 18px; } 
 
 .layer-cont-call .input-type { width: 330px; } 
+
+.layer-cont-call .input-type:first-child {margin-right: 20px;}
 
 .layer-cont-call .input-type > button { background: #000; color: #fff; opacity: 0.6; font-size: 18px; font-weight: 300; margin-left: 10px; width: 100px; } 
 
