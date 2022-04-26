@@ -10,7 +10,7 @@
 
 .top-bg-cont-wrap { top: 60%; } 
 
-.top-bg-tit { margin-bottom: 20px; } 
+.top-bg-tit { margin-bottom: 20px; text-align: center;} 
 
 .top-bg-txt { line-height: 1; } 
 /* ...top bg 재정의 */
