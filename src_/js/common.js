@@ -72,6 +72,19 @@ $(function () {
         }
     }
 
+    /* 5월 1일자에 쿠션 링크 변경 이벤트 실행*/
+    let eventDate = new Date("05/01/2022 00:00:00");
+    let nowDate = new Date();
+
+    if(eventDate <= nowDate) {
+        $(".detail-nav li a").each(function(idx, item) {
+            if(item.text.indexOf("글로우 퍼펙트 엑소좀 쿠션") !== -1) {
+                $(this).attr("href","https://www.exoregen.kr/myoffice/pub.do?prgId=osProduct.osProd.osProductView&pdtCd=000082");
+            }
+        });
+    }
+
+
     /* 준비중 페이지 처리 */
     $(".close").on("click",function(){
         alert("준비중 입니다.")
@@ -118,5 +131,5 @@ $(function () {
                 companyBox.style.display = "none";
             },300);
         }
-    }
+    }    
 });
