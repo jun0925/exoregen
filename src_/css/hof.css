@@ -66,11 +66,11 @@
 
 .best-leader:nth-last-child(5) { margin-bottom: 0; } 
 
-.best-leader .best-leader-img { width: 180px; height: 180px; overflow: hidden; border-radius: 50%; position: absolute; top: -140px; left: 50%; transform: translateX(-50%); } 
+.best-leader .best-leader-img { width: 180px; height: 0; padding-bottom: calc(180 / 185 * 85%); overflow: hidden; border-radius: 50%; position: absolute; top: -140px; left: 50%; transform: translateX(-50%); background-repeat: no-repeat; background-size: cover; background-position: top center; } 
 
-.best-leader .leader-name { font-size: 30px; font-weight: 600; text-align: center; margin-bottom: 30px; } 
+.best-leader .leader-name { font-size: 30px; font-weight: 600; text-align: center; margin-bottom: 30px; white-space:nowrap; overflow: hidden; text-overflow:ellipsis; line-height: 1.2} 
 
-.best-leader .leader-typho { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 18px; font-weight: 300; line-height: 1.67; word-break: keep-all; margin-bottom: 5px; } 
+.best-leader .leader-typho { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 18px; font-weight: 300; line-height: 1.67; word-break: keep-all; margin-bottom: 5px; text-align: center;} 
 
 .best-leader .leader-info { text-align: center; } 
 
@@ -100,15 +100,17 @@
 
 .hof-detail-section .hof-top p.sm { font-size: 14px; opacity: 0.6; letter-spacing: 0; color: #222; } 
 
-.hof-detail-section .hof-top .hof-img { width: 300px; height: 300px; overflow: hidden; border-radius: 50%; margin: 30px auto; } 
+.hof-detail-section .hof-top .hof-img { width: 300px; height: 0; padding-bottom: calc(300 / 300 * 25%); overflow: hidden; border-radius: 50%; margin: 30px auto; background-repeat: no-repeat; background-size: cover; background-position: top center;}  
 
 .hof-detail-section .hof-top .hof-greeting { font-size: 40px; line-height: 1.3; margin-bottom: 12px; } 
 
-.hof-detail-section .hof-top .go-join-btn { display: block; width: 180px; height: 60px; line-height: 60px; margin: 40px auto 0; background: #3e215d; color: #fff; font-weight: 300; } 
+.hof-detail-section .hof-top .go-join-btn { display: block; width: 180px; height: 60px; line-height: 60px; margin: 40px auto 0; background: #43695c; color: #fff; font-weight: 300; } 
 
 .hof-detail-section .hof-top .go-join-btn img { margin-left: 30px; } 
 
 .hof-detail-section .hof-cont { padding-bottom: 82px; } 
+
+.hof-detail-section .hof-cont img {width: 100%;}
 
 .hof-detail-section .hof-cont p { font-size: 20px; font-weight: 300; line-height: 1.6; word-break: keep-all; } 
 
