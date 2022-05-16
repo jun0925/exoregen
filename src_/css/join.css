@@ -94,7 +94,7 @@ select option { font-weight: 300; }
 
 .form-cont .typho { font-size: 14px; font-weight: 300; position: absolute; right: 0; } 
 
-.form-cont .typho strong { border-bottom: 1px solid #000; } 
+.form-cont .typho #scrHofObj { cursor: pointer; border-bottom: 1px solid #000; } 
 
 .join-form-wrap label { display: block; font-size: 20px; margin-bottom: 20px; } 
 
