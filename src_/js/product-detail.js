@@ -52,21 +52,33 @@ $(function(){
     });
     
     //detail toggle
-    var detailContList = document.querySelectorAll(".detail-list > li");
+    var detailContList = document.querySelectorAll(".detail-list .toggle-btn");
     for(var i= 0 ; i < detailContList.length; i++) {
         detailContList[i].onclick = function() {
-            this.classList.toggle("active");
+            this.parentNode.classList.toggle("active");   
         }
     }
 
     //product swiper 
+    var reComProdSwiper = new Swiper("#recomProdSwiper",{
+        slidesPerView: 3,
+        spaceBetween: 20,
+        speed: 500,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: "#recomProdSwiper .swiper-button-next",
+            prevEl: "#recomProdSwiper .swiper-button-prev"
+        }
+    });
+
     var anotherProductSSwiper = new Swiper ("#anotherProductsSwiper",{
         slidesPerView: 3,
         spaceBetween: 20,
         speed: 500,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            nextEl: "#anotherProductsSwiper .swiper-button-next",
+            prevEl: "#anotherProductsSwiper .swiper-button-prev"
         }
     });
 });

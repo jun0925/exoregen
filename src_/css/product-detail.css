@@ -90,10 +90,10 @@
 
 /* ...배송 등 정보 */
 /*...detail section css */
-
+.recom-outer {margin: 40px 0;}
 .another-section { margin-bottom: 90px; } 
 .another-section .swiper-slide { width: 385px; } 
-.another-section .swiper-slide a { display: block; background: #f4f2f5; } 
+.another-section .swiper-slide a,#recomProdSwiper .swiper-slide a { display: block; background: #f4f2f5; } 
 .product-txt-box { padding: 30px 20px; box-sizing: border-box; height: 190px; } 
 .product-info-box .product-name { font-size: 30px; font-weight: 600; margin-bottom: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 
 .product-info-box .product-description { font-size: 18px; font-weight: 300; margin-bottom: 40px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 
