@@ -1,7 +1,7 @@
 $(function () {
     //kobeas thumb Swiper 
     var kobeasThumb = new Swiper(".kobeas-thumb-swiper",{
-        slidesPerView: "auto",
+        slidesPerView: 3.2,
         watchSlidesProgress: true,
         watchSlidesVisibility: true,
         speed: 600,
