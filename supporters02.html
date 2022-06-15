@@ -870,6 +870,9 @@
 
             $("#videoPopupBox > .close-btn").on("click", videoClose);
             $("#videoPopup").on("click", videoClose);
+            $("#videoPopupBox").on("click", function (e) {
+                e.stopPropagation();
+            });
 
             function videoOpen(url) {
                 videoPopup.style.display = "block";
