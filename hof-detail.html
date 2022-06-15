@@ -200,7 +200,7 @@
                             </li>
                             <li>
                                 <a href="/supporters02.html">
-                                    인플루언서 엠버서더
+                                    인플루언서 앰버서더
                                 </a>
                             </li>
                             <li>
@@ -769,6 +769,33 @@
         </div>
     </footer>
     <!-------...FOOTER------->
+
+    <script>
+        $(function(){
+            $(".influ-youtube-thumb").on("click",function(){
+                const youtubeUrl = $(this).attr("data-url");
+                
+            });
+            function videoOpen(url) {
+                videoPopup.style.display = "block";
+                htmlBody.style.overflowY = "hidden";
+                setTimeout(function () {
+                    videoPopupBox.classList.add("show");
+                    iframeCont.setAttribute("src", url);
+                }, 50);
+            }
+
+            function videoClose() {
+                iframeCont.setAttribute("src", " ");
+                htmlBody.style.overflowY = "auto";
+                videoPopupBox.classList.remove("show");
+                setTimeout(function () {
+                    videoPopup.style.display = "none";
+                    //videoPlayBtn.classList.remove("hide");
+                }, 200);
+            }
+        });
+    </script>
 </body>
 
 </html>
