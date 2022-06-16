@@ -48,7 +48,7 @@
 .influ-main {margin-bottom: 65px; background: url(/img_/spt/spt02/spt2-main.jpg) no-repeat; height: 525px; box-sizing: border-box;}
 .influ-youtube-wrap .influ-youtube-thumb { cursor: pointer; background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%; height: 0; padding-bottom: calc(400 / 1200 * 100%); position: relative;}
 .influ-youtube-wrap .influ-youtube-thumb:before {content: ""; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background:rgba(0, 0, 0, 0.6);}
-.influ-youtube-wrap .influ-youtube-thumb:after {content: ""; display: block; width: 100px; height: 100px; background-image: url(/img_/icon/video_btn_off.png); background-repeat: no-repeat; background-size: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: 2px 0 34px rgba(39,24,55,0.6); overflow:hidden; transition: 0.3s;}
+.influ-youtube-wrap .influ-youtube-thumb:after {content: ""; display: block; width: 100px; height: 100px; background-image: url(/img_/icon/video_btn_off.png); background-repeat: no-repeat; background-size: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 50%; overflow:hidden; transition: 0.3s;}
 .influ-youtube-wrap .influ-youtube-thumb:hover:after {background-image: url(/img_/icon/video_btn_on.png);}
 .influ-youtube-wrap .influ-youtube-description {background: #eaeaea; font-size: 20px; text-align: center; padding: 20px 0;}
 .influ-list { display: flex; flex-wrap: wrap; justify-content: space-between;}
