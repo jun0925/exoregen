@@ -24,11 +24,21 @@
 
 /* supporters01 페이지 */
 .kobeas-main { margin-bottom: 33px; background: url(/img_/spt/spt-main.jpg) no-repeat; height: 525px; box-sizing: border-box; } 
-.influ-main .influ-subject , .kobeas-main .kobeas-subject { display: flex; flex-direction: column; justify-content: center; height: 100%; padding-left: 90px; } 
-.influ-main .influ-subject p , .kobeas-main .kobeas-subject p { color: #fff; font-size: 20px; font-weight: 300; line-height: 1.6; } 
-.influ-main .influ-subject p:first-child, .kobeas-main .kobeas-subject p:first-child { margin-bottom: 10px; } 
-.influ-main .influ-subject p span.big , .kobeas-main .kobeas-subject p span.big { font-size: 46px; font-weight: 600; } 
-.influ-main .influ-subject p span.midium , .kobeas-main .kobeas-subject p span.midium { font-size: 30px; font-weight: 400; } 
+.influ-main .influ-subject , 
+.kobeas-main .kobeas-subject,
+.celeb-main .celeb-subject { display: flex; flex-direction: column; justify-content: center; height: 100%; padding-left: 90px; } 
+.influ-main .influ-subject p , 
+.kobeas-main .kobeas-subject p,
+.celeb-main .celeb-subject p { color: #fff; font-size: 20px; font-weight: 300; line-height: 1.6; } 
+.influ-main .influ-subject p:first-child, 
+.kobeas-main .kobeas-subject p:first-child,
+.celeb-main .celeb-subject p:first-child { margin-bottom: 10px; } 
+.influ-main .influ-subject p span.big , 
+.kobeas-main .kobeas-subject p span.big ,
+.celeb-main .celeb-subject p span.big { font-size: 46px; font-weight: 600; } 
+.influ-main .influ-subject p span.midium , 
+.kobeas-main .kobeas-subject p span.midium,
+.celeb-main .celeb-subject p span.midium { font-size: 30px; font-weight: 400; } 
 .kobeas-img-box img { width: 100%; } 
 .kobeas-txt-box { font-size: 20px; font-weight: 300; line-height: 1.6; margin-bottom: 52px; } 
 .kobeas-txt-box p { font-size: 20px; font-weight: 300; line-height: 1.7; margin-bottom: 25px; } 
@@ -58,11 +68,6 @@
 /* ...supporters02 페이지 */
 
 /* supporters03 페이지 */
-.celeb-main {margin: 102px 0 125px;}
-.celeb-img-box {text-align: center;}
-.celeb-img-box.logo-img {margin-bottom: 65px;}
-.celeb-img-box img {width: 100%;}
-.celeb-img-box.logo-img img {max-width: 350px;}
-.celeb-txt-box {margin-top: 40px;}
-.celeb-txt-box p {font-size: 20px; font-weight: 300; line-height: 1.7;}
+.section-celeb {margin-bottom: 75px;}
+.celeb-main {margin-bottom: 65px; background: url(/img_/spt/spt03/spt3-main.jpg) no-repeat; height: 525px; box-sizing: border-box;}
 /* ...supporters03 페이지 */
