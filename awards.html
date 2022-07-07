@@ -659,7 +659,7 @@
                                 <div class="swiper-outer awards-detail-swiper-outer">
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
-                                            <li class="swiper-slide award-video-thumb" id="goodBrand-video-btn">
+                                            <li class="swiper-slide award-video-thumb" data-url="https://www.youtube.com/embed/wNXvMRXQDxk">
                                                 <img src="/img_/awards/211217-1/220105_awards2_img_v.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
@@ -714,7 +714,7 @@
                                 <div class="swiper-outer awards-detail-swiper-outer">
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
-                                            <li class="swiper-slide award-video-thumb" id="awardBrand-video-btn">
+                                            <li class="swiper-slide award-video-thumb" data-url="https://www.youtube.com/embed/wIKVtDfE7sQ">
                                                 <img src="/img_/awards/211217-2/220105_awards1_img_v.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
@@ -951,7 +951,7 @@
                                 <div class="swiper-outer awards-detail-swiper-outer">
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
-                                            <li class="swiper-slide award-video-thumb" id="kpb-video-btn">
+                                            <li class="swiper-slide award-video-thumb" data-url="https://www.youtube.com/embed/g1jUCWZZYDQ">
                                                 <img src="/img_/awards/05/211222_awards1_img_v.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
@@ -997,7 +997,10 @@
                     <img src="/img_/icon/close-btn.png" alt="닫기" />
                 </div>
                 <div class="video-wrap">
-                    <video src="" muted controls></video>
+                    <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    <!--<div class="play-btn">
+                        <img src="/img_/icon/playbtn.png" alt="재생" />
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -1442,7 +1445,7 @@
             var imgPopup = document.getElementById("imgPopup");
             var videoPopupBox = document.getElementById("videoPopupBox");
             var imgPopupBox = document.getElementById("imgPopupBox");
-            var video = document.querySelector(".video-popup-box > .video-wrap > video");
+            var video = document.querySelector(".video-popup-box > .video-wrap > iframe");
             var img = document.querySelector(".img-popup-box > .img-wrap > img");
             var videoPopupClose = document.querySelector("#videoPopupBox > .close-btn");
             var imgPopupClose = document.querySelector("#imgPopupBox > .close-btn");
@@ -1450,15 +1453,9 @@
 
 
             $(".award-video-thumb").on("click",function(videoSrc){
-                var $thisId = $(this).attr("id");
-
-                if($thisId == "goodBrand-video-btn" || $thisId == "awardBrand-video-btn") {
-                    videoSrc = "/img_/awards/211217-1/goodbrand_video.mp4";
-                } else if($thisId == "kpb-video-btn") {
-                    videoSrc = "/img_/awards/05/kpb_video.mp4";
-                }
-
-                videoOpen(videoSrc);
+                var $youtubeUrl = $(this).data("url");
+                videoOpen($youtubeUrl);
+                console.log($(this).data());
             });
 
             videoPopup.onclick = function () {
@@ -1522,7 +1519,6 @@
                 setTimeout(function () {
                     videoPopupBox.classList.add("show");
                     video.setAttribute("src", videoSrc);
-                    video.play();
                 }, 50);
             }
 
