@@ -357,6 +357,9 @@
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
                                             <li class="swiper-slide">
+                                                <div class="youtube-thumb" style="background-image: url(https://img.youtube.com/vi/aFT2DyhCgAU/maxresdefault.jpg)" data-url="https://www.youtube.com/embed/aFT2DyhCgAU"></div>
+                                            </li>
+                                            <li class="swiper-slide">
                                                 <img src="/img_/awards/20220401-1/220401_awards1_img1.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
@@ -409,6 +412,9 @@
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
                                             <li class="swiper-slide">
+                                                <div class="youtube-thumb" style="background-image: url(https://img.youtube.com/vi/U6dTzNmoUB8/maxresdefault.jpg)" data-url="https://www.youtube.com/embed/U6dTzNmoUB8"></div>
+                                            </li>
+                                            <li class="swiper-slide">
                                                 <img src="/img_/awards/20220401-2/220401_awards2_img1.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
@@ -457,6 +463,9 @@
                                 <div class="swiper-outer awards-detail-swiper-outer">
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
+                                            <li class="swiper-slide">
+                                                <div class="youtube-thumb" style="background-image: url(https://img.youtube.com/vi/5R61Sd6HLl4/maxresdefault.jpg)" data-url="https://www.youtube.com/embed/5R61Sd6HLl4"></div>
+                                            </li>
                                             <li class="swiper-slide">
                                                 <img src="/img_/awards/20220322-1/220322_awards1_img1.jpg" alt="">
                                             </li>
@@ -774,6 +783,9 @@
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
                                             <li class="swiper-slide">
+                                                <div class="youtube-thumb" style="background-image: url(https://img.youtube.com/vi/r-ZmCHISIgM/maxresdefault.jpg)" data-url="https://www.youtube.com/embed/r-ZmCHISIgM"></div>
+                                            </li>
+                                            <li class="swiper-slide">
                                                 <img src="/img_/awards/01/211222_awards5_img01.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
@@ -829,6 +841,9 @@
                                 <div class="swiper-outer awards-detail-swiper-outer">
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
+                                            <li class="swiper-slide">
+                                                <div class="youtube-thumb" style="background-image: url(https://img.youtube.com/vi/r-ZmCHISIgM/maxresdefault.jpg)" data-url="https://www.youtube.com/embed/r-ZmCHISIgM"></div>
+                                            </li>
                                             <li class="swiper-slide">
                                                 <img src="/img_/awards/02/211222_awards4_img01.jpg" alt="">
                                             </li>
@@ -1002,6 +1017,19 @@
             </div>
         </div>
         <!--..video popup-->
+        
+        <!-- youtube popup -->
+        <div class="video-popup" id="youtubePopup">
+            <div class="video-popup-box" id="youtubePopupBox">
+                <div class="close-btn">
+                    <img src="/img_/icon/close-btn.png" alt="닫기" />
+                </div>
+                <div class="video-wrap">
+                    <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- ..youtube popup -->
 
         <!--img popup-->
         <div class="img-popup" id="imgPopup">
@@ -1428,7 +1456,7 @@
                 $(this).parent().attr("id", "awardDetailOuter-" + index);
                 $(this).attr("id","awardDetail-" + index);
                 var awardDetailSwiper = new Swiper("#awardDetail-" + index, {
-                    slidesPerView: "auto",
+                    slidesPerView: 6.5,
                     spaceBetween: 10,
                     navigation: {
                         prevEl: $("#awardDetailOuter-" + index).children(".swiper-button-prev"),
@@ -1437,7 +1465,7 @@
                 });
             });
 
-            var kpbVideoBtn = document.getElementById("kpb-video-btn");
+            // 동영상 태그 관련,이미지 팝업
             var videoPopup = document.getElementById("videoPopup");
             var imgPopup = document.getElementById("imgPopup");
             var videoPopupBox = document.getElementById("videoPopupBox");
@@ -1447,7 +1475,6 @@
             var videoPopupClose = document.querySelector("#videoPopupBox > .close-btn");
             var imgPopupClose = document.querySelector("#imgPopupBox > .close-btn");
             var htmlBody = document.querySelector("html,body");
-
 
             $(".award-video-thumb").on("click",function(videoSrc){
                 var $thisId = $(this).attr("id");
@@ -1459,6 +1486,19 @@
                 }
 
                 videoOpen(videoSrc);
+            });
+
+
+            // 유튜브 영상 팝업 
+            var youtubePopup = document.getElementById("youtubePopup");
+            var youtubePopupBox = document.getElementById("youtubePopupBox");
+            var youtube = document.querySelector("#youtubePopupBox iframe");
+            var youtubePopupClose = document.querySelector("#youtubePopupBox > .close-btn");
+
+            $(".youtube-thumb").on("click",function(){
+                var $youtubeUrl = $(this).data("url");
+
+                youtubeOpen($youtubeUrl);
             });
 
             videoPopup.onclick = function () {
@@ -1485,10 +1525,20 @@
                 e.stopPropagation();
             }
 
+            youtubePopup.onclick = function () {
+                youtubeClose();
+            }
+
+            youtubePopupClose.onclick = function() {
+                youtubeClose();
+            }
+
+            youtubePopupBox.onclick = function (e) {
+                e.stopPropagation();
+            }
+
             $(".awards-detail-swiper img").not($(".award-video-thumb img")).on("click", function () {
                 var $thisSrc = $(this).attr("src");
-                console.log($thisSrc);
-
                 imgOpen($thisSrc);
             });
 
@@ -1532,6 +1582,25 @@
                 videoPopupBox.classList.remove("show");
                 setTimeout(function () {
                     videoPopup.style.display = "none";
+                    //videoPlayBtn.classList.remove("hide");
+                }, 300);
+            }
+
+            function youtubeOpen(url) {
+                youtubePopup.style.display = "block";
+                htmlBody.style.overflowY = "hidden";
+                setTimeout(function () {
+                    youtubePopupBox.classList.add("show");
+                    youtube.setAttribute("src", url);
+                }, 50);
+            }
+
+            function youtubeClose() {
+                youtube.setAttribute("src", " ");
+                htmlBody.style.overflowY = "auto";
+                youtubePopupBox.classList.remove("show");
+                setTimeout(function () {
+                    youtubePopup.style.display = "none";
                     //videoPlayBtn.classList.remove("hide");
                 }, 300);
             }

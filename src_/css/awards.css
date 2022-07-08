@@ -60,9 +60,15 @@
 
 .awards-detail-swiper { width: 870px; } 
 
-.awards-detail-swiper .swiper-slide { max-width: 120px; max-height:91px; overflow: hidden;} 
+.awards-detail-swiper .swiper-slide { max-height:91px; overflow: hidden; } 
 
 .awards-detail-swiper li img { width: 100%; cursor: pointer; } 
+
+.awards-detail-swiper li .youtube-thumb { width: 100%; cursor: pointer; height: 91px; background-size: cover; background-repeat: no-repeat; background-position: center; position: relative; } 
+
+.awards-detail-swiper li .youtube-thumb::before { content: ""; display: block; background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; } 
+
+.awards-detail-swiper li .youtube-thumb::after { content:""; border-radius: 50%; display: block; width: 55px; height: 55px; box-shadow: 0 0 10px #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-image: url(/img_/icon/video_btn_off.png); background-size: 55px; background-repeat: no-repeat; background-position: center;} 
 
 .awards-detail-swiper-outer .swiper-button-prev,
 .awards-detail-swiper-outer .swiper-button-next { width: 13px; height: 22px; top: 50%; transform: translateY(-50%); margin-top: 0; opacity: 0.3; transition: 0.2s; } 
