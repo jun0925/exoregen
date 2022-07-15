@@ -16,7 +16,7 @@
 /* ...top bg 재정의 */
 
 /* brand01 */
-.brand01-cont { width: 100%; height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; min-width: 1200px; margin: 0 auto; } 
+.brand01-cont { width: 100%; height: 100vh; min-height: 800px; background-repeat: no-repeat; background-position: center; background-size: cover; min-width: 1200px; margin: 0 auto; } 
 
 .brand01-cont.cont1 { background-image: url(/img_/brand/brand01/sec1-bg.jpg); background-attachment: fixed; position: relative; } 
 
@@ -321,13 +321,12 @@
 
 .brand-video .section-video .tab-wrap { margin-bottom: 0; } 
 
-.brand-video .video-list { display: flex; flex-wrap: wrap; justify-content: space-between;} 
+.brand-video .section-video .video-list-wrap {margin-top: 65px}
 
-.brand-video .video-list li { width: 380px; margin-top: 65px;} 
+.brand-video .video-list { display: grid; grid-template-areas: ". . ."; grid-auto-columns: 31.65%; grid-gap: 65px 30px} 
 
-
-.brand-video .video-list li .video-thumb { width: 100%; height: 250px; /*background-size: cover; */
- background-repeat: no-repeat; background-position: center center; background-image: url(/img_/video-page/sample-thumb.jpg); position: relative; cursor: pointer; } 
+.brand-video .video-list li .video-thumb { width: 100%; height: 0; padding-bottom: calc(250 / 380 * 100%); /*background-size: cover; */
+ background-repeat: no-repeat; background-position: center center;  position: relative; cursor: pointer; } 
 
 .brand-video .video-list li .video-thumb:after { content: " "; display: block; width: 70px; height: 70px; background-image: url(/img_/icon/video_btn_off.png); background-repeat: no-repeat; background-size: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 2px 0 34px rgba(39, 24, 55, 0.6); border-radius: 50%; overflow: hidden; transition: 0.3s; } 
 
