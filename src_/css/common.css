@@ -228,7 +228,7 @@ header.active .logo { background-image: url(/img_/logo/logo-bk.png); }
 /* ..header on*/
 
 /* header scroll */
-header.scrollDown { top: -20%; } 
+header.scrollDown { top: -100%; } 
 
 header.scrollUp { top: -69px; background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.3); } 
 
