@@ -1,0 +1,331 @@
+.product-sec {
+    background-image: url('/img_/landing/sec1-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 129px;
+    min-width: 1200px;
+}
+
+.pdt-info-box {
+    box-sizing: border-box;
+    background-image: url('/img_/landing/sec1-box-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 75px 115px;
+}
+
+.pdt-info-box .pdt-info-txt-wrap {
+    text-align: center;
+}
+
+.pdt-info-box h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pdt-info-box h2 span {
+    font-weight: 300;
+}
+
+.pdt-info-box p {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.pdt-info-box .pdt-video-wrap {
+    max-width: 600px;
+    margin-top: 70px;
+}
+
+.video-thumb {
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px #c680c1;
+    border: 1px solid #c680c1;
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(344 / 600 * 100%);
+    position: relative;
+    cursor: pointer;
+}
+
+.video-thumb.pdt-video-thumb {
+    background-image: url('/img_/landing/sec1-box-vi-thumb.jpg');
+}
+
+.video-thumb.use-video-thumb {
+    background-image: url('/img_/landing/sec3-vi-thumb.jpg');
+}
+
+.video-thumb::after {
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 9px 15px rgb(0,0,0,0.5);
+    background-image: url('/img_/icon/playbtn.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scr-txt {
+    white-space: nowrap;
+    padding: 80px 0 100px 50vw;
+}
+
+.scr-txt span {
+    font-size: 80px;
+    font-weight: 200;
+    margin-right: 30px;
+    color: #b985ff;
+    letter-spacing: 0;
+}
+
+.point-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.point-wrap .point {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #322137;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.point-wrap .point.left {
+    background-image: url('/img_/landing/sec1-box2-bg-left.png');
+}
+
+.point-wrap .point.right {
+    background-image: url('/img_/landing/sec1-box2-bg-right.png');
+}
+
+.point-wrap .point .point-cont {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.point-wrap .point .point-cont h3 {
+    color: #eeca89;
+    font-size: 30px;
+}
+
+.point-wrap .point .point-cont h3 span {
+    font-weight: 300;
+}
+
+.point-wrap .point .point-cont h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: #eeca89;
+    margin: 30px 0;
+}
+
+.point-wrap .point .point-cont p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.point-wrap .point .point-cont p span {
+    font-size: 18px;
+    color: #dc81c5;
+}
+
+.point-wrap .point.right .img-wrap {
+    order: 2;
+}
+
+.point-wrap .point.right .point-cont {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.point-wrap .point.right .point-cont h3::after {
+    margin-left: auto;
+}
+
+.buy-sec {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.buy-sec .buy-cont-wrap {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.buy-sec .buy-name-wrap {
+    margin-bottom: 60px;
+}
+
+.buy-sec .buy-name-wrap .pdt-name {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.buy-sec .buy-name-wrap .pdt-sub-name {
+    font-size: 22px;
+}
+
+.buy-sec .buy-desc-wrap p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.buy-sec .buy-pdt-ingr {
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    padding: 15px 0;
+    margin: 35px 0;
+}
+
+.buy-sec .buy-pdt-ingr span {
+    color: #d134a9;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.buy-sec .buy-pdt-ingr span:nth-child(2) {
+    margin: 0 15px;
+}
+
+.buy-sec .buy-price-wrap {
+    margin-bottom: 65px;
+}
+
+.buy-sec .buy-price-wrap .buy-price {
+    color: #232323;
+    font-size: 30px;
+    letter-spacing: 0;
+}
+
+
+.buy-sec .buy-btn-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.buy-sec .buy-btn-wrap a {
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.buy-sec .buy-btn-wrap a.detail-btn {
+    border: 2px solid #541b3f;
+    color: #541b3f;
+}
+
+.buy-sec .buy-btn-wrap a.buy-btn {
+    color: #fff;
+    background: #541b3f;
+}
+
+.use-sec {
+    background-image: url('/img_/landing/sec3-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0 100px;
+}
+
+.use-sec .use-txt-wrap {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.use-sec .use-tit-wrap {
+    margin-bottom: 25px;
+}
+
+.use-sec .use-tit-wrap::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #dc81c5;
+    margin: 30px auto 0;
+}
+
+.use-sec .use-tit-wrap .use-tit {
+    font-size: 46px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.use-sec .use-tit-wrap .use-sub {
+    color: #dc81c5;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.use-sec .use-desc-wrap p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.use-sec .use-cont-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+.use-sec .use-cont-wrap .use-video-wrap {
+    width: 595px;
+}
+
+.use-sec .use-cont-wrap .num-list {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 7px;
+}
+
+.use-sec .use-cont-wrap .num-list li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 26px;
+    color: #fff;
+}
+
+.use-sec .use-cont-wrap .num-list li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #572244;
+    font-weight: 600;
+    font-size: 20px;
+}
