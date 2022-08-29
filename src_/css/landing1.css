@@ -1,3 +1,12 @@
+body {
+    background: #000;
+}
+
+section {
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .product-sec {
     background-image: url('/img_/landing/sec1-bg.jpg?ver=220829');
     background-repeat: no-repeat;
@@ -5,6 +14,19 @@
     background-position: center;
     padding-top: 129px;
     min-width: 1200px;
+}
+
+.product-sec .into-wrap {
+    min-width: 1200px;
+    height: 689px;
+    position: relative;
+}
+
+.product-sec .into-wrap video {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .pdt-info-box {
@@ -165,12 +187,14 @@
 }
 
 .buy-sec {
-    width: 1200px;
     margin: 0 auto;
     padding: 120px 0;
+    background: #fff;
 }
 
 .buy-sec .buy-cont-wrap {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 110px;
@@ -332,8 +356,25 @@
 }
 
 .percent-sec {
-    background-image: url('/img_/landing/sec4-bg.jpg');
+    background-image: url('/img_/landing/sec4-bg2.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     padding: 115px 0;
+}
+
+.percent-sec .percent-tit-wrap {
+    text-align: center;
+}
+
+.percent-sec .percent-tit-wrap .pdt-sub {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+    opacity: 0.2;
+}
+
+.percent-sec .percent-tit-wrap .percent-tit {
+    color: #fff;
+    font-size: 38px;
 }
