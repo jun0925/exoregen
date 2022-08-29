@@ -7,6 +7,7 @@ section {
     margin: 0 auto;
     overflow: hidden;
 }
+
 .product-sec {
     background-image: url('/img_/landing/sec1-bg.jpg?ver=220829');
     background-repeat: no-repeat;
@@ -16,13 +17,13 @@ section {
     min-width: 1200px;
 }
 
-.product-sec .into-wrap {
+.product-sec .intro-wrap {
     min-width: 1200px;
     height: 689px;
     position: relative;
 }
 
-.product-sec .into-wrap video {
+.product-sec .intro-wrap video {
     height: 100%;
     position: absolute;
     left: 50%;
