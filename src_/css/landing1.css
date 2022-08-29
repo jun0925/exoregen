@@ -1,7 +1,8 @@
 .product-sec {
-    background-image: url('/img_/landing/sec1-bg.jpg');
+    background-image: url('/img_/landing/sec1-bg.jpg?ver=220829');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 129px;
     min-width: 1200px;
 }
@@ -328,4 +329,11 @@
     color: #572244;
     font-weight: 600;
     font-size: 20px;
+}
+
+.percent-sec {
+    background-image: url('/img_/landing/sec4-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 115px 0;
 }
