@@ -704,12 +704,12 @@ section {
 
 #reviewSwiper .swiper-button-prev {
     background-image: url('/img_/landing/review-prev.jpg');
-    left: -40px;
+    left: -32px;
 }
 
 #reviewSwiper .swiper-button-next {
     background-image: url('/img_/landing/review-next.jpg');
-    right: -40px;
+    right: -48px;
 }
 
 #reviewSwiper .swiper-button-prev:hover,
