@@ -82,6 +82,8 @@ $(function () {
             $(".use-video-thumb").fadeOut(300,function(){
                 $(".use-video-wrap video").get(0).play();
             });
+
+            $(".num-list li").addClass(aniClass);
         }
 
         //퍼센테이지 영역
