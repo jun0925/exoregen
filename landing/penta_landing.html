@@ -265,9 +265,14 @@
     </header>
     <!-------...HEADER------->
 
+    <!-- 인트로 -->
+    <div class="intro-wrap">
+        <video src="/img_/landing/landing_intro2.mp4" autoplay muted playsinline poster="/img_/landing/intro_vi_thumb.jpg"></video>
+    </div>
+    <!-- ...인트로-->
     <!-- 제품 첫번째 섹션 -->
     <section class="product-sec">
-        <div class="intro-wrap">
+        <div class="sec1-video-wrap">
             <video src="/img_/landing/sec1-video.mp4" autoplay muted playsinline poster="/img_/landing/sec1-video-poster.jpg"></video>
         </div>
         <div class="pdt-info-box">
@@ -278,6 +283,7 @@
 
             <div class="pdt-video-wrap">
                 <div class="pdt-video-thumb video-thumb"></div>
+                <video src="/img_/landing/pdt-cont-video.mp4" muted playsinline loop></video>
             </div>
         </div>
 
@@ -292,7 +298,7 @@
         </div>
 
         <div class="point-wrap">
-            <div class="point left">
+            <div class="point left" id="point1">
                 <div class="point-cont">
                     <div class="img-wrap">
                         <img src="/img_/landing/sec1-box2-cont1.png" alt="펜타 엑소 래디언스 크림 포인트">
@@ -310,7 +316,7 @@
                     </div>
                 </div>
             </div>
-            <div class="point right">
+            <div class="point right" id="point2">
                 <div class="point-cont">
                     <div class="img-wrap">
                         <img src="/img_/landing/sec1-box2-cont2.png" alt="펜타 엑소 래디언스 크림 포인트">
@@ -327,7 +333,7 @@
                     </div>
                 </div>
             </div>
-            <div class="point left">
+            <div class="point left" id="point3">
                 <div class="point-cont">
                     <div class="img-wrap">
                         <img src="/img_/landing/sec1-box2-cont3.png" alt="펜타 엑소 래디언스 크림 포인트">
@@ -404,6 +410,7 @@
         <div class="use-cont-wrap">
             <div class="use-video-wrap">
                 <div class="use-video-thumb video-thumb"></div>
+                <video src="/img_/landing/use-cont-video.mp4" muted playsinline loop></video>
             </div>
             <div class="use-cont">
                 <ul class="num-list">
@@ -447,7 +454,8 @@
                         </div>
                         <div class="per-desc">
                             <h4 class="percentage-tit">눈가 주름 개선율</h4>
-                            <span class="percentage odometer">13.43%</span>
+                            <span class="percentage odometer" id="percentage1">0</span>
+                            <span>%</span>
                         </div>
                     </li>
                     <li>
@@ -456,7 +464,8 @@
                         </div>
                         <div class="per-desc">
                             <h4 class="percentage-tit">피부 수분함량</h4>
-                            <span class="percentage odometer">16.17%</span>
+                            <span class="percentage odometer"id="percentage2">0</span>
+                            <span>%</span>
                         </div>
                     </li>
                     <li>
@@ -465,7 +474,8 @@
                         </div>
                         <div class="per-desc">
                             <h4 class="percentage-tit">표피 탄력 개선율</h4>
-                            <span class="percentage odometer">21.08%</span>
+                            <span class="percentage odometer" id="percentage3"></span>
+                            <span>%</span>
                         </div>
                     </li>
                 </ul>
@@ -693,6 +703,21 @@
         </div>
     </section>
     <!-- wtc 섹션 -->
+
+    <!-- fixed 구매하기 버튼 -->
+    <div class="fix-buy-btn-wrap">
+        <div class="fix-btn-inner">
+            <div class="pdt-name-wrap">
+                <p class="pdt-main-name">펜타 엑소 래디언스 크림</p>
+                <p class="pdt-sub-name">PENTA EXO RADIANCE CREAM</p>
+            </div>
+            <div class="btn-wrap">
+                <a href="javscript:void(0)" class="detail-btn">자세히 보기</a>
+                <a href="javscript:void(0)" class="buy-btn">구매하기</a>
+            </div>
+        </div>
+    </div>
+    <!--...fixed 구매하기 버튼 -->
 
     <!-------FOOTER------->
     <footer>
