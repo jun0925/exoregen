@@ -137,22 +137,22 @@ Note all DIVs are generated and should not be hard-coded
 */
 
 .simply-scroll { /* Customisable base class for style override DIV */
-	width: 576px;
-	height: 200px;
+	/*width: 576px;
+	height: 200px;*/
 	margin-bottom: 1em;
 }
 
 	.simply-scroll .simply-scroll-clip {
-		width: 576px;
-		height: 200px;
+		/*width: 576px;
+		height: 200px;*/
 	}
 	
 		.simply-scroll .simply-scroll-list {}
 		
 		.simply-scroll .simply-scroll-list li {
 			float: left;
-			width: 290px;
-			height: 200px;
+			/*width: 290px;
+			height: 200px;*/
 		}
 		.simply-scroll .simply-scroll-list li img {}
 	
