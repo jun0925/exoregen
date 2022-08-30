@@ -623,7 +623,7 @@ footer .section-outer { background: #3e215d; padding: 80px 0 90px; }
 
 .awards-logo-swiper-wrap .swiper-button-next { background-image: url(/img_/icon/award-swiper-next.png); right: -30px; } 
 
-.awards-logo-swiper-wrap { box-shadow: 10px 2px 29px #ccc; box-sizing: border-box; padding: 40px 0 30px; } 
+.awards-logo-swiper-wrap { background: #fff; box-shadow: 10px 2px 29px #ccc; box-sizing: border-box; padding: 40px 0 30px; position: relative;} 
 
 .awards-logo-swiper-wrap .section-inner { position: relative; } 
 
