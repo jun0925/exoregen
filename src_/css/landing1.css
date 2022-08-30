@@ -673,7 +673,7 @@ section {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 930px;
+    width: 923px;
     height: 100%;
     transform: translateX(-50%);
     z-index: 100;
@@ -704,12 +704,12 @@ section {
 
 #reviewSwiper .swiper-button-prev {
     background-image: url('/img_/landing/review-prev.jpg');
-    left: -32px;
+    left: -44px;
 }
 
 #reviewSwiper .swiper-button-next {
     background-image: url('/img_/landing/review-next.jpg');
-    right: -48px;
+    right: -44px;
 }
 
 #reviewSwiper .swiper-button-prev:hover,
