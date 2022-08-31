@@ -48,7 +48,7 @@ $(function () {
         grabCursor: true,
         autoplay: {
             delay: 2000,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
         }
     });
 
