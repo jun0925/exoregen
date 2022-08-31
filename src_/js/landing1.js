@@ -140,7 +140,7 @@ $(function () {
     }
 
     const observer = new IntersectionObserver(handler,{
-        rootMargin: '500% 0px 0px 0px'
+        rootMargin: '1000% 0px 0px 0px'
     });
 
     observer.observe(triggerEl);
