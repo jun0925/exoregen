@@ -884,6 +884,7 @@ section {
 .fix-buy-btn-wrap .btn-wrap a.detail-btn {
     color: #541b3f;
     border: 2px solid #541b3f;
+    background: #fff;
 }
 
 .fix-buy-btn-wrap .btn-wrap a.buy-btn {
