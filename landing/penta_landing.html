@@ -285,6 +285,10 @@
                 <div class="pdt-video-thumb video-thumb"></div>
                 <video src="/img_/landing/pdt-cont-video.mp4" muted playsinline loop></video>
             </div>
+
+            <div class="pdt-img-wrap">
+                <img src="/img_/landing/sec1-box-cont.png" alt="">
+            </div>
         </div>
 
         <div class="scr-txt left_move">
@@ -410,7 +414,7 @@
         <div class="use-cont-wrap">
             <div class="use-video-wrap">
                 <div class="use-video-thumb video-thumb"></div>
-                <video src="/img_/landing/use-cont-video.mp4" muted playsinline loop></video>
+                <video src="/img_/landing/use-cont-video.mp4" muted playsinline loop controls controlslist="nodownload"></video>
             </div>
             <div class="use-cont">
                 <ul class="num-list">
@@ -662,10 +666,10 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-btn-wrap">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!--<div class="swiper-btn-wrap">
+            </div>-->
         </div>
     </section>
     <!-- ...리뷰 섹션 -->
@@ -673,17 +677,19 @@
     <!-- wtc 섹션 -->   
     <section class="wtc-sec">
         <h3 class="sec-tit">엑소바이옴코리아 VIP 라운지에서 직접 제품을 체험해 보세요</h3>
-        <ul id="loungeList">
-            <li>
-                <img src="/img_/landing/sec7-cont1.jpg" alt="라운지" />
-            </li>
-            <li>
-                <img src="/img_/landing/sec7-cont2.jpg" alt="라운지" />
-            </li>
-            <li>
-                <img src="/img_/landing/sec7-cont1.jpg" alt="라운지" />
-            </li>
-        </ul>
+        <div class="swiper-container" id="loungeSwiper">
+            <ul class="swiper-wrapper" id="loungeList">
+                <li class="swiper-slide">
+                    <img src="/img_/landing/sec7-cont1.jpg" alt="라운지" />
+                </li>
+                <li class="swiper-slide">
+                    <img src="/img_/landing/sec7-cont2.jpg" alt="라운지" />
+                </li>
+                <li class="swiper-slide">
+                    <img src="/img_/landing/sec7-cont1.jpg" alt="라운지" />
+                </li>
+            </ul>
+        </div>
         <div class="lounge-desc-wrap">
             <p class="desc">
                 <b>서울본사 VIP 라운지:</b>

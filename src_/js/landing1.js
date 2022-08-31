@@ -4,6 +4,9 @@ $(function () {
         scrollTo(0,0)
     },10);
 
+    //애니메이션 클래스 선언
+    const aniClass ="ani-class";
+
     //최초 로드시 html,body overflow: hidden 처리
     $("html,body").css("overflow","hidden");
 
@@ -12,18 +15,17 @@ $(function () {
         $(".intro-wrap").stop().fadeOut(300,function(){
             $(this).remove();
             $(".sec1-video-wrap video").get(0).play();
+            $(".pdt-info-box").addClass(aniClass);
         });
 
         $("html,body").css("overflow","auto");
     },3500);
 
-    const aniClass ="ani-class";
 
     //리뷰 스와이퍼
     const review = new Swiper("#reviewSwiper", {
         slidesPerView: "auto",
-        //slidesPerGroup: 3,
-        spaceBetween: 10,
+        spaceBetween: 20,
         loop: true,
         loopedSlides: 10000,
         centeredSlides: true,
@@ -35,10 +37,19 @@ $(function () {
         },
     });
 
-    // 라운드 이미지 flow
-    $("#loungeList").simplyScroll({
-        pauseOnHover: true,
-        speed: 1,
+    // 라운드 이미지 Swiper
+    const loungeSwiper = new Swiper("#loungeSwiper",{
+        slidesPerView: 2.3,
+        spaceBetween: 60,
+        loop: true,
+        centeredSlides: true,
+        loopedSlides: 10000,
+        speed: 800,
+        grabCursor: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: true,
+        }
     });
 
     //스크롤 값에 따라 필요한 스크립트 실행.
@@ -49,9 +60,13 @@ $(function () {
         // 첫번째 pdt box
         if(scrY >= $(".pdt-info-box").position().top - 500) {
             $(".pdt-info-txt-wrap").children().addClass(aniClass);
-            $(".pdt-video-thumb").fadeOut(300,function(){
-                $(".pdt-video-wrap video").get(0).play();
-            });
+            setTimeout(function(){
+                $(".pdt-video-wrap").addClass(aniClass);
+                $(".pdt-img-wrap").addClass(aniClass);
+                $(".pdt-video-thumb").fadeOut(300,function(){
+                    $(".pdt-video-wrap video").get(0).play();
+                });
+            },500);
         }
 
         // 두번째 point
