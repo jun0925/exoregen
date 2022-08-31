@@ -44,10 +44,10 @@ $(function () {
         loop: true,
         centeredSlides: true,
         loopedSlides: 10000,
-        speed: 800,
+        speed: 2500,
         grabCursor: true,
         autoplay: {
-            delay: 2000,
+            delay: 5000,
             disableOnInteraction: false,
         }
     });
