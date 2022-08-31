@@ -62,6 +62,25 @@ span.swiper-pagination-current { font-weight: 600; }
 .section1 .swiper-button-next { right: 46.3%; } 
 
 /** ...section 1 **/
+
+/** 시즌 섹션 **/
+.season-section { margin-bottom: 100px;}
+
+.season-section a {display: block; box-sizing: border-box; width: 1200px; height: 447px; margin: 0 auto; background-image: url(/img_/season_img.jpg); background-size: cover; background-position: center; position: relative; margin-top: 40px;}
+
+.season-section a .tit-wrap {position: absolute; top: 50%; left: 160px; transform: translateY(-50%);}
+
+.season-section a .tit-wrap .season-pdt-name {font-size: 48px; margin-bottom: 25px;}
+
+.season-section a .tit-wrap .season-pdt-sub-name {display: flex; align-items: center; font-size: 26px; color: #9c4392; letter-spacing: 0;}
+
+.season-section a .tit-wrap .season-pdt-sub-name::before,
+.season-section a .tit-wrap .season-pdt-sub-name::after { content: ""; display: inline-block; width: 2px; height: 24px; background: #9c4392;}
+
+.season-section a .tit-wrap .season-pdt-sub-name::before {margin-right: 20px;}
+
+.season-section a .tit-wrap .season-pdt-sub-name::after {margin-left: 20px;}
+/** ...시즌 섹션 **/
 /** section 2 **/
 .section2 { margin-bottom: 90px; } 
 
