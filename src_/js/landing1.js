@@ -144,6 +144,14 @@ $(function () {
     });
 
     observer.observe(triggerEl);
+
+    $(".img-popup").on("mousedown",function(){
+        imgClose();
+    });
+
+    $(".img-popup-box").on("mousedown",function(e){
+        e.stopPropagation();
+    });
 });
 
 
