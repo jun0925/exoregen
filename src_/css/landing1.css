@@ -259,7 +259,7 @@ section {
 }
 
 .buy-sec .buy-cont {
-    position: relative;
+    width: 100%;
 }
 
 .buy-sec .buy-cont-wrap {
@@ -769,18 +769,11 @@ section {
 }
 
 .wtc-sec #loungeSwiper .swiper-slide {
-    background: rgba(0, 0, 0, 0.8);
     font-size: 0;
 }
 
 .wtc-sec #loungeSwiper .swiper-slide img {
     width: 100%;
-    opacity: 0.2;
-    transition: 0.4s;
-}
-
-.wtc-sec #loungeSwiper .swiper-slide-active img {
-    opacity: 1;
 }
 
 .wtc-sec .lounge-desc-wrap {
