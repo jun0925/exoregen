@@ -66,7 +66,7 @@ span.swiper-pagination-current { font-weight: 600; }
 /** 시즌 섹션 **/
 .season-section { margin-bottom: 100px;}
 
-.season-section a {display: block; box-sizing: border-box; width: 1200px; height: 447px; margin: 40px auto 0; background-image: url(/img_/season_img.jpg); background-size: cover; background-position: center; position: relative;}
+.season-section a {display: block; box-sizing: border-box; width: 1200px; height: 341px; margin: 40px auto 0; background-image: url(/img_/season_img.jpg); background-size: cover; background-position: center; position: relative;}
 
 .season-section a .tit-wrap {position: absolute; top: 50%; left: 160px; transform: translateY(-50%);}
 
