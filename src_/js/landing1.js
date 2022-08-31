@@ -62,10 +62,12 @@ $(function () {
             $(".pdt-info-txt-wrap").children().addClass(aniClass);
             setTimeout(function(){
                 $(".pdt-video-wrap").addClass(aniClass);
-                $(".pdt-img-wrap").addClass(aniClass);
                 $(".pdt-video-thumb").fadeOut(300,function(){
                     $(".pdt-video-wrap video").get(0).play();
                 });
+                setTimeout(function(){
+                    $(".pdt-img-wrap").addClass(aniClass);
+                },700);
             },500);
         }
 
@@ -127,7 +129,7 @@ $(function () {
 
     // fixed 버튼 효과 observe
     const observeEl = document.querySelector(".fix-buy-btn-wrap");
-    const triggerEl = document.querySelector(".use-sec");
+    const triggerEl = document.querySelector(".buy-btn-wrap");
 
     const handler = entries => {
         if(entries[0].isIntersecting) {
@@ -164,4 +166,22 @@ function movingText(el) {
             transform: `translate3d(${operator}${scrY * 2}px, 0px, 0px)`
         });
     }
+}
+
+function imgOpen(imgSrc) {
+    $("#imgPopup").show();
+    $("html,body").css("overflowY","hidden");
+    setTimeout(function () {
+        $("#imgPopupBox").addClass("show");
+        $("#imgPopupBox > .img-wrap > img").attr("src",imgSrc);
+    }, 50);
+}
+
+function imgClose() {
+    $("#imgPopupBox").removeClass("show");
+    $("html,body").css("overflowY","auto");
+    setTimeout(function () {
+        $("#imgPopupBox > .img-wrap > img").attr("src","");
+        $("#imgPopup").css("display","none");
+    }, 300);
 }
