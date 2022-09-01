@@ -828,8 +828,8 @@ section {
     bottom: -100%;
     left: 0;
     background: rgba(255, 255, 255, 0.9);
-    z-index: 10000;
-    transition: bottom 1s;
+    z-index: 9;
+    transition: bottom 0.5s;
 }
 
 .fix-buy-btn-wrap.fix-btn-on {

@@ -238,6 +238,8 @@ header.scrollUp a { color: #000 !important; }
 
 /** footer **/
 
+footer {position: relative; z-index: 19;}
+
 footer .counseling { padding: 90px 0; background: #f0f0f0; display: none; } 
 
 footer .counseling .sec-title { font-size: 40px; font-family: "Noto Sans KR",sans-serif; font-weight: 400; margin-bottom: 40px; text-align: center; } 
@@ -272,7 +274,7 @@ footer .counseling .left .left-btm .check-cont a { opacity: 0.6; vertical-align:
 footer .counseling .right { align-self: flex-end; } 
 
 footer .counseling .right button { width: 150px; height: 120px; background: #3e215d; color: #fff; font-size: 18px; font-weight: 300; } 
-footer .section-outer { background: #3e215d; padding: 80px 0 90px; } 
+footer .section-outer { position: relative; background: #3e215d; padding: 80px 0 90px; z-index: 2;} 
 
 .f-cont-wrap { margin-top: 40px; position: relative; } 
 
