@@ -654,25 +654,17 @@ footer .section-outer { position: relative; background: #3e215d; padding: 80px 0
 .awards-logo-swiper-wrap .swiper-button-prev:hover,
 .awards-logo-swiper-wrap .swiper-button-next:hover { opacity: 1; } 
 
+.awards-logo-swiper-wrap .swiper-button-next { right: 0; } 
+.awards-logo-swiper-wrap .swiper-button-prev { left: 0; } 
+
 .awards-logo-swiper-wrap .swiper-button-prev { background-image: url(/img_/icon/award-swiper-prev.png); left: -30px; } 
 
 .awards-logo-swiper-wrap .swiper-button-next { background-image: url(/img_/icon/award-swiper-next.png); right: -30px; } 
 
-.awards-logo-swiper-wrap { background: #fff; box-shadow: 10px 2px 29px #ccc; box-sizing: border-box; padding: 40px 0 30px; position: relative;} 
+.awards-logo-swiper-wrap { background: #fff; box-shadow: 10px 2px 29px #ccc; box-sizing: border-box; padding: 30px 0; position: relative;} 
 
 .awards-logo-swiper-wrap .section-inner { position: relative; } 
 
-.award-logo-swiper { width: 1100px; margin: 0 auto; }
+.award-logo-swiper { width: 1100px; margin: 0 auto;} 
 
-.award-logo-swiper .swiper-wrapper { align-items: center; } 
-
-.award-logo-swiper .swiper-slide a { display: flex; align-items: center; width: auto; } 
-
-.award-logo-swiper .swiper-slide .logo-img { padding-right: 20px; } 
-
-.award-logo-swiper .swiper-slide .logo-img img { max-width: 85px; } 
-
-.award-logo-swiper .swiper-slide .logo-name { font-size: 18px; font-weight: 500; letter-spacing: 0; line-height: 1.22; word-break: keep-all; } 
-
-.awards-logo-swiper-wrap .swiper-button-next { right: 0; } 
-.awards-logo-swiper-wrap .swiper-button-prev { left: 0; } 
+.award-logo-swiper img {width: 100%;}
