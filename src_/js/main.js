@@ -202,28 +202,8 @@ $(function () {
     var htmlBody = document.querySelector("html,body");
 
     $(".youtube-cont").on("click", function () {
-        var videoUrlArray = [
-            "https://www.youtube.com/embed/6EhI3nyCKz4",
-            "https://www.youtube.com/embed/UygQtisQJFQ",
-            "https://www.youtube.com/embed/XTOsXpkMBx0",
-            "https://www.youtube.com/embed/wJl9gpmU8VQ",
-            "https://www.youtube.com/embed/fylAHCCqqnc",
-        ]
-
-        var $thisId = $(this).attr("id");
-        var youtube = "youtube";
-
-        if ($thisId == youtube + "0") {
-            youtubeOpen(videoUrlArray[0])
-        } else if ($thisId == youtube + "1") {
-            youtubeOpen(videoUrlArray[1]);
-        } else if ($thisId == youtube + "2") {
-            youtubeOpen(videoUrlArray[2]);
-        } else if ($thisId == youtube + "3") {
-            youtubeOpen(videoUrlArray[3]);
-        } else if ($thisId == youtube + "4") {
-            youtubeOpen(videoUrlArray[4]);
-        }
+        var $youtubeUrl = $(this).data("url");
+        youtubeOpen($youtubeUrl);
     });
 
     videoBubble.onclick = function () {
