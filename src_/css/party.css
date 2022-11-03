@@ -1610,7 +1610,7 @@ section {
     z-index: 100000;
   }
   .layer-popup .content-box {
-    border: 5px solid #f36c21;
+    border: 5px solid #3e215d;
     position: absolute;
     top: 60%;
     left: 50%;
