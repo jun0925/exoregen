@@ -121,6 +121,14 @@ $(function(){
         const $replaceSrc = $(this).css("background-image").replace(/^url\(['"](.+)['"]\)/, '$1');;
         imgLayerOpen($replaceSrc);
     });
+
+    $(".layer-popup").on("mousedown",function(){
+        layerClose();
+    });
+
+    $(".content-box").on("mousedown",function(e){
+        e.stopPropagation();
+    });
 });
 
 // 이미지 팝업 오픈 함수
