@@ -58,6 +58,7 @@ $(function(){
             effect: "fade",
             observer: true,
             observeParents: true,
+            grabCursor: true,
             thumbs: {
                 swiper: gallerySubSwiper
             },
@@ -93,21 +94,6 @@ $(function(){
         },
     });
 
-    $(".awards-swiper").each(function(index,element){
-        $(this).attr("id",`partyAwardSwiper-${index}`);
-
-        const partyAwardsSwiper = new Swiper(`#partyAwardSwiper-${index}`,{
-            slidesPerView: 4,
-            spaceBetween: 20,
-            observer: true,
-            observeParents: true,
-            navigation: {
-                nextEl: `#partyAwardSwiper-${index} .swiper-button-next`,
-                prevEl: `#partyAwardSwiper-${index} .swiper-button-prev`
-            }
-        });
-    });
-
     $(".awards-tab .content-tab").on("click",function(){
         $(this).addClass("active");
         $(".awards-tab .content-tab").not($(this)).removeClass("active");
@@ -115,40 +101,36 @@ $(function(){
         const $tabIdx = $(this).index();
         $(".award-cont-wrap").hide();
         $(".award-cont-wrap").eq($tabIdx).stop().fadeIn(600);
+
+        if($(".party-content2-section .swiper-wrapper").children().length <= 3) {
+            centerOption = true;
+        } else {
+            centerOption = false;
+        }
     });
 
-    $(".awards-swiper .winner-thumb").on("click",function(){
-        const $replaceSrc = $(this).css("background-image").replace(/^url\(['"](.+)['"]\)/, '$1');;
-        imgLayerOpen($replaceSrc);
-    });
+    $(".awards-swiper").each(function(index,element){
+        $(this).attr("id",`partyAwardSwiper-${index}`);
+        
+        let centerOption;
+        if($(`#partyAwardSwiper-${index} .swiper-wrapper`).children().length == 1) {
+            centerOption = true;
+        } else {
+            centerOption = false;
+        }
 
-    $(".layer-popup").on("mousedown",function(){
-        layerClose();
-    });
-
-    $(".content-box").on("mousedown",function(e){
-        e.stopPropagation();
+        const partyAwardsSwiper = new Swiper(`#partyAwardSwiper-${index}`,{
+            slidesPerView: 4,
+            spaceBetween: 20,
+            speed: 800,
+            observer: true,
+            observeParents: true,
+            centeredSlides: centerOption,
+            grabCursor: true,
+            navigation: {
+                nextEl: `#partyAwardSwiper-${index} .swiper-button-next`,
+                prevEl: `#partyAwardSwiper-${index} .swiper-button-prev`
+            }
+        });
     });
 });
-
-// 이미지 팝업 오픈 함수
-function imgLayerOpen(src) {
-    $("html,body").css("overflow-y","hidden");
-    $("#imgPopup").stop().fadeIn(100,function(){
-        const $contentBox = $(this).children(".content-box");
-        const $imgObj = $("<img>");
-        $contentBox.addClass("show");
-        $imgObj.prop("src",src).appendTo($contentBox.children(".img-wrap"));
-    });
-}
-
-// 팝업 닫기 함수
-function layerClose() {
-    $("html,body").css("overflow-y","auto");
-    $(".content-box").removeClass("show");
-    setTimeout(function(){
-        $(".layer-popup").stop().fadeOut(100);
-        $(".video-wrap > iframe").remove();
-        $(".img-wrap > img").remove();
-    }, 200);
-}
