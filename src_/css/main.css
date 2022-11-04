@@ -31,14 +31,14 @@
 
 .section1 .swiper-slide.slide7 { background-image: url("/img_/pc_party_main_slide.jpg"); } 
 
-.section1 .swiper-slide .slide-cont-wrap { position: absolute; top: 55.2%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; opacity: 0; transition: 0.7s; } 
+.section1 .swiper-slide .slide-cont-wrap { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; opacity: 0; transition: 0.7s; } 
 
-.section1 .swiper-slide.swiper-slide-active .slide-cont-wrap { top: 60.2%; opacity: 1; } 
+.section1 .swiper-slide.swiper-slide-active .slide-cont-wrap { top: 55%; opacity: 1; } 
 
 .slide-cont-wrap p,
 .slide-cont-wrap a { color: #fff; font-weight: 200; } 
 
-.slide-cont-wrap .slide-product-name { font-size: 80px; margin-bottom: 30px; } 
+.slide-cont-wrap .slide-product-name { font-size: 80px; margin-bottom: 30px; line-height: 1.3;} 
 
 .slide-cont-wrap .slide-description { font-size: 24px; line-height: 1.5; margin-bottom: 30px; } 
 
