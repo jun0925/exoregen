@@ -1584,6 +1584,9 @@ section {
 .h-exo-section .h-exo-list li {
   width: 100%;
 }
+.h-exo-section .h-exo-list .promotion-img-wrap {
+  box-shadow: 3px 7px 15px #ccc;
+}
 .h-exo-section .h-exo-list .promotion-desc {
   font-size: 22px;
   font-weight: 300;
