@@ -83,17 +83,6 @@ $(function(){
         },
     });
 
-    const partyAwardsSwiper = new Swiper("#partyAwardsSwiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        observer: true,
-        observeParents: true,
-        navigation: {
-            nextEl: "#partyAwardsSwiper .swiper-button-next",
-            prevEl: "#partyAwardsSwiper .swiper-button-prev"
-        },
-    });
-
     $(".awards-tab .content-tab").on("click",function(){
         $(this).addClass("active");
         $(".awards-tab .content-tab").not($(this)).removeClass("active");
@@ -101,22 +90,26 @@ $(function(){
         const $tabIdx = $(this).index();
         $(".award-cont-wrap").hide();
         $(".award-cont-wrap").eq($tabIdx).stop().fadeIn(600);
-
-        if($(".party-content2-section .swiper-wrapper").children().length <= 3) {
-            centerOption = true;
-        } else {
-            centerOption = false;
-        }
     });
 
     $(".awards-swiper").each(function(index,element){
         $(this).attr("id",`partyAwardSwiper-${index}`);
         
         let centerOption;
-        if($(`#partyAwardSwiper-${index} .swiper-wrapper`).children().length == 1) {
+        let awardSwiperWrap = $(`#partyAwardSwiper-${index} .swiper-wrapper`);
+        let awardsContLength = awardSwiperWrap.children().length
+
+
+        if(awardsContLength == 1) {
             centerOption = true;
         } else {
             centerOption = false;
+        }
+
+        if(awardsContLength == 3) {
+            awardSwiperWrap.css("justify-content","center");
+        } else {
+            awardSwiperWrap.css("justify-content","");
         }
 
         const partyAwardsSwiper = new Swiper(`#partyAwardSwiper-${index}`,{
