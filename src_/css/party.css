@@ -152,7 +152,7 @@ section {
 }
 .party-content1-section .main-video-box {
   width: 100%;
-  height: 400px;
+  height: 675px;
   margin-bottom: 8px;
 }
 .party-content1-section .main-video-box iframe {
@@ -1526,7 +1526,6 @@ section {
           transform: translateY(-50%);
 }
 .party-content2-section .winner-thumb {
-  cursor: pointer;
   width: 100%;
   height: 430px;
   background-position: center;
@@ -1593,65 +1592,11 @@ section {
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
-    opacity: 0.4;
+    opacity: 0;
 }
 
 /** ...헬시엑소 프로모션 영역 **/
 
-/** layer popup **/
-.layer-popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 100000;
-  }
-  .layer-popup .content-box {
-    border: 5px solid #3e215d;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    opacity: 0;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .layer-popup .content-box.show {
-    top: 50%;
-    opacity: 1;
-  }
-  .layer-popup .close-btn {
-    cursor: pointer;
-    position: absolute;
-    top: -55px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .layer-popup .video-wrap {
-    width: 700px;
-    height: 480px;
-    font-size: 0;
-    position: relative;
-  }
-  .layer-popup .video-wrap iframe {
-    width: 100%;
-    height: 100%;
-  }
-  .layer-popup .img-wrap {
-    width: auto;
-    height: auto;
-  }
-  .layer-popup .img-wrap img {
-    width: 100%;
-    max-height: 660px;
-  }
-  
-  /** ...layer popup **/
 /* 상단 배너 스크롤 요소 애니메이션 */
 @-webkit-keyframes scrollDown {
   0% {
