@@ -189,7 +189,7 @@ nav { width: 100%; z-index: 1000; transition: all 0.5s; }
 .nav-menu { display: flex; padding-left: 30px;}
 .nav-menu>.menu { position: relative; padding: 0 50px; } 
 .nav-menu > .menu:last-child { margin-right: 0; } 
-.nav-menu > .menu > a { display: block; color: #fff; font-size: 20px; font-weight: 600; letter-spacing: 0; padding: 20px 0;} 
+.nav-menu > .menu > a { display: block; color: #fff; font-size: 20px; font-weight: 600; letter-spacing: 0; padding: 20px 0; transform: scale(1.01);} 
 .nav-menu > .menu:hover > a { color: #3e215d !important; } 
 .detail-nav { display: none; width: 100%; position: absolute; left: 0; top: 80px; z-index: 3; } 
 .detail-nav li { text-align: center; padding-bottom: 18px; } 
