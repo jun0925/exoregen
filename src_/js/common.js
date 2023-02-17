@@ -89,6 +89,9 @@ $(function () {
         });
     }
 
+    console.log(eventDate);
+    console.log(nowDate);
+
 
     /* 준비중 페이지 처리 */
     $(".close").on("click",function(){
