@@ -34,7 +34,7 @@
 
 .awards-list > li .list-inner { width: 1200px; margin: 0 auto; display: flex; } 
 
-.awards-list > li .award-thumb { min-width: 300px; text-align: center; cursor: pointer; } 
+.awards-list > li .award-thumb { min-width: 300px; text-align: center;} 
 
 .awards-list > li .award-thumb img { width: auto; } 
 
