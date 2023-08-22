@@ -1533,6 +1533,7 @@ section {
 }
 .party-content2-section .winner-info .winner-number {
   font-size: 18px;
+  line-height: 1.1;
 }
 
 /** ...파티 어워즈 수상자 영역 **/
