@@ -47,10 +47,12 @@ section {
   margin-top: -9%;
 }
 .party-banner-section .party-video-wrap video {
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  -o-object-position: center;
 }
 .party-banner-section .mouse-el {
   -webkit-box-sizing: border-box;
@@ -307,6 +309,14 @@ section {
   background-repeat: no-repeat;
   height: 160px;
   cursor: pointer;
+}
+.party-content1-section .party-gal-cont-box .swiper-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  -o-object-position: center;
 }
 .party-gal-cont-box .gallery-cont-wrap #galleryMain-0 .gal-cont0,
 .party-content1-section .party-gal-cont-box .gallery-cont-wrap #galleryThumb-0 .gal-cont0 {
@@ -1528,6 +1538,7 @@ section {
 /** ...파티 어워즈 수상자 영역 **/
 /** 헬시엑소 프로모션 영역 **/
 .h-exo-section {
+  display: none;
   background-image: url("/img_/party/h-exo/h-exo-bg.jpg");
   background-position: center;
   background-size: cover;

@@ -97,7 +97,7 @@ $(function(){
             centerOption = false;
         }
 
-        if(awardsContLength == 3) {
+        if(awardsContLength <= 3) {
             awardSwiperWrap.css("justify-content","center");
         } else {
             awardSwiperWrap.css("justify-content","");
