@@ -1477,7 +1477,7 @@
                     <li>
                         <div class="list-inner">
                             <div class="award-thumb">
-                                <img src="/img_/awards/211217-2/220105_awards1_img0.png" alt="2021 영화인들이 뽑은 착한브랜드 대상">
+                                <img src="/img_/awards/211217-2/211217_awards1_img0.png" alt="2021 영화인들이 뽑은 착한브랜드 대상">
                             </div>
                             <div class="award-info">
                                 <h3 class="award-name">2021 영화인들이 뽑은 착한브랜드 대상</h3>
@@ -1498,31 +1498,31 @@
                                     <div class="swiper-container awards-detail-swiper">
                                         <ul class="swiper-wrapper">
                                             <li class="swiper-slide award-video-thumb" id="awardBrand-video-btn">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img_v.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img_v.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img1.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img1.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img2.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img2.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img3.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img3.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img4.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img4.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img5.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img5.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img6.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img6.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img7.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img7.jpg" alt="">
                                             </li>
                                             <li class="swiper-slide">
-                                                <img src="/img_/awards/211217-2/220105_awards1_img8.jpg" alt="">
+                                                <img src="/img_/awards/211217-2/211217_awards1_img8.jpg" alt="">
                                             </li>
                                         </ul>
                                     </div>
@@ -1770,11 +1770,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-            <div class="circle-btn-wrap">
-                <a href="#more" class="circle-btn">
-                    <img src="/img_/icon/more-arrow.png" alt="더보기">
-                </a>
             </div>
         </section>
         <!--...awards section-->
@@ -2339,12 +2334,11 @@
             });
 
             function imgOpen(imgSrc) {
-                imgSrcResult = imgSrc.replace(/(.png|.jpg|.jpeg|.gif)$/, '');
                 imgPopup.style.display = "block";
                 htmlBody.style.overflowY = "hidden";
                 setTimeout(function () {
                     imgPopupBox.classList.add("show");
-                    img.setAttribute("src", imgSrcResult + "+b.jpg" || imgSrcResult + "+b.JPG");
+                    img.setAttribute("src", imgSrc);
                 }, 50);
             }
 
@@ -2352,7 +2346,7 @@
                 imgPopupBox.classList.remove("show");
                 htmlBody.style.overflowY = "auto";
                 setTimeout(function () {
-                    img.setAttribute("src", " ");
+                    img.setAttribute("src", "");
                     imgPopup.style.display = "none";
                 }, 300);
             }
